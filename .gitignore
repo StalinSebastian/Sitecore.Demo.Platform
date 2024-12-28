@@ -45,3 +45,7 @@ FrontEnd/*/scripts/pre-optimized-min.js
 
 # Ephemeral index caches used by serialization, do not commit
 .scindex
+
+# Environment files
+#.env
+.env.local

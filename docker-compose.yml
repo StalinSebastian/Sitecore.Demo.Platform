@@ -1,7 +1,7 @@
 services:
   traefik:
     isolation: ${TRAEFIK_ISOLATION}
-    image: traefik:v2.2.0-windowsservercore-1809
+    image: ${TRAEFIK_IMAGE}
     command:
       - "--ping"
       - "--api.insecure=true"
@@ -27,7 +27,7 @@ services:
         condition: service_healthy
   mssql:
     isolation: ${ISOLATION}
-    image: ${SITECORE_DOCKER_REGISTRY}sxp/nonproduction/mssql-developer:2017-${WINDOWSSERVERCORE_VERSION}
+    image: ${SITECORE_DOCKER_REGISTRY}sxp/nonproduction/mssql-developer:2022-${WINDOWSSERVERCORE_VERSION}
     environment:
       SA_PASSWORD: ${SQL_SA_PASSWORD}
       ACCEPT_EULA: "Y"

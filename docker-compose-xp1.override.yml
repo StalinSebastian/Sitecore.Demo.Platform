@@ -11,7 +11,7 @@ services:
     networks:
       - demo
   mssql:
-    image: ${SITECORE_DOCKER_REGISTRY}sxp/nonproduction/mssql-developer:2017-${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
+    image: ${SITECORE_DOCKER_REGISTRY}sxp/nonproduction/mssql-developer:2022-${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
     isolation: ${ISOLATION}
     volumes:
     - type: bind

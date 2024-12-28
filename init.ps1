@@ -63,7 +63,11 @@ if (-not (Get-InstalledModule -Name SitecoreDockerTools -RequiredVersion $docker
 Write-Host "Importing SitecoreDockerTools..." -ForegroundColor Green
 Import-Module SitecoreDockerTools -RequiredVersion $dockerToolsVersion
 
-
+##################
+# Create .env file
+##################
+Write-Host "Creating .env file." -ForegroundColor Green
+Copy-Item ".\.env.local" ".\.env" -Force
 ##################################
 # Configure TLS/HTTPS certificates
 ##################################
