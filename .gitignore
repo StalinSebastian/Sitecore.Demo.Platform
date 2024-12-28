@@ -47,5 +47,5 @@ FrontEnd/*/scripts/pre-optimized-min.js
 .scindex
 
 # Environment files
-#.env
+.env
 .env.local
