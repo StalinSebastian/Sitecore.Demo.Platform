@@ -4,6 +4,15 @@ Param (
     [Parameter(HelpMessage = "Whether to skip building the Docker images.")]
     [switch]$SkipBuild,
 
+	[Parameter(HelpMessage = "Toggles whether to skip schemas and rebuild of the indexes.")]
+    [switch]$SkipIndexing,
+
+	[Parameter(HelpMessage = "Toggles whether to skip pushing items and JSS configuration.")]
+    [switch]$SkipPush,
+
+    [Parameter(HelpMessage = "Toggles whether to skip opening the site and CM in a browser.")]
+    [switch]$SkipOpen,
+
     [Parameter(HelpMessage = "Whether to set up the environment with pre-release version of Sitecore products (internal only) .")]
     [switch]$PreRelease
 )
@@ -78,43 +87,54 @@ try {
     }
     # END CUSTOMIZATION
 
-    # DEMO TEAM CUSTOMIZATION - Custom hostname
-    dotnet sitecore login --cm https://cm.lighthouse.localhost/ --auth https://id.lighthouse.localhost/ --allow-write true
-    if ($LASTEXITCODE -ne 0) {
-        Write-Error "Unable to log into Sitecore, did the Sitecore environment start correctly? See logs above."
-    }
 
-    # Populate Solr managed schemas to avoid errors during item deploy
-    Write-Host "Populating Solr managed schema..." -ForegroundColor Green
-    # DEMO TEAM CUSTOMIZATION - Populate Solr managed schemas using Sitecore CLI.
-    dotnet sitecore index schema-populate
-    if ($LASTEXITCODE -ne 0) {
-        Write-Error "Populating Solr managed schema failed, see errors above."
-    }
+	if (-not $SkipIndexing) {
+		# DEMO TEAM CUSTOMIZATION - Custom hostname
+		dotnet sitecore login --cm https://cm.lighthouse.localhost/ --auth https://id.lighthouse.localhost/ --allow-write true
+		if ($LASTEXITCODE -ne 0) {
+			Write-Error "Unable to log into Sitecore, did the Sitecore environment start correctly? See logs above."
+		}
+
+		# Populate Solr managed schemas to avoid errors during item deploy
+		Write-Host "Populating Solr managed schema..." -ForegroundColor Green
+		# DEMO TEAM CUSTOMIZATION - Populate Solr managed schemas using Sitecore CLI.
+		dotnet sitecore index schema-populate
+		if ($LASTEXITCODE -ne 0) {
+			Write-Error "Populating Solr managed schema failed, see errors above."
+		}
+	}
     # END CUSTOMIZATION
 
-    # DEMO TEAM CUSTOMIZATION - Removed initial JSS app items deployment and serialization. We are developing in Sitecore-first mode.
-    # Push the serialized items
-    Write-Host "Pushing items to Sitecore..." -ForegroundColor Green
-    dotnet sitecore ser push
-    if ($LASTEXITCODE -ne 0) {
-        Write-Error "Serialization push failed, see errors above."
-    }
-    # DEMO TEAM CUSTOMIZATION - Split pushing and publishing operations.
-    dotnet sitecore publish
-    if ($LASTEXITCODE -ne 0) {
-        Write-Error "Serialization publish failed, see errors above."
-    }
-    # END CUSTOMIZATION
+	if (-not $SkipPush) {
+		# DEMO TEAM CUSTOMIZATION - Custom hostname
+		dotnet sitecore login --cm https://cm.lighthouse.localhost/ --auth https://id.lighthouse.localhost/ --allow-write true
+		if ($LASTEXITCODE -ne 0) {
+			Write-Error "Unable to log into Sitecore, did the Sitecore environment start correctly? See logs above."
+		}
 
-    # DEMO TEAM CUSTOMIZATION - Rebuild indexes using Sitecore CLI.
-    # Rebuild indexes
-    Write-Host "Rebuilding indexes ..." -ForegroundColor Green
-    dotnet sitecore index rebuild
-    if ($LASTEXITCODE -ne 0) {
-        Write-Error "Rebuild indexes failed, see errors above."
-    }
-    # END CUSTOMIZATION
+		# DEMO TEAM CUSTOMIZATION - Removed initial JSS app items deployment and serialization. We are developing in Sitecore-first mode.
+		# Push the serialized items
+		Write-Host "Pushing items to Sitecore..." -ForegroundColor Green
+		dotnet sitecore ser push
+		if ($LASTEXITCODE -ne 0) {
+			Write-Error "Serialization push failed, see errors above."
+		}
+		# DEMO TEAM CUSTOMIZATION - Split pushing and publishing operations.
+		dotnet sitecore publish
+		if ($LASTEXITCODE -ne 0) {
+			Write-Error "Serialization publish failed, see errors above."
+		}
+		# END CUSTOMIZATION
+
+		# DEMO TEAM CUSTOMIZATION - Rebuild indexes using Sitecore CLI.
+		# Rebuild indexes
+		Write-Host "Rebuilding indexes ..." -ForegroundColor Green
+		dotnet sitecore index rebuild
+		if ($LASTEXITCODE -ne 0) {
+			Write-Error "Rebuild indexes failed, see errors above."
+		}
+		# END CUSTOMIZATION
+	}
 }
 catch {
     Write-Error "An error occurred while attempting to log into Sitecore, populate the Solr managed schema, or pushing website items to Sitecore: $_"
@@ -123,7 +143,24 @@ finally {
     Pop-Location
 }
 
-Write-Host "Opening sites..." -ForegroundColor Green
+if (-not $SkipOpen) {
+	$envContent = Get-Content .env -Encoding UTF8
+	$ASPNET_HOST = $envContent | Where-Object { $_ -imatch "^ASPNET_RENDERING_HOST=.+" }
+	$ASPNET_HOST = $ASPNET_HOST.Split("=")[1]
+	$ASPNETCore_HOST = $envContent | Where-Object { $_ -imatch "^ASPNETCore_RENDERING_HOST=.+" }
+	$ASPNETCore_HOST = $ASPNETCore_HOST.Split("=")[1]
+	$NextJS_HOST = $envContent | Where-Object { $_ -imatch "^NextJS_RENDERING_HOST=.+" }
+	$NextJS_HOST = $NextJS_HOST.Split("=")[1]
+	$Angular_HOST = $envContent | Where-Object { $_ -imatch "^Angular_RENDERING_HOST=.+" }
+	$Angular_HOST = $Angular_HOST.Split("=")[1]
+	$React_HOST = $envContent | Where-Object { $_ -imatch "^React_RENDERING_HOST=.+" }
+	$React_HOST = $React_HOST.Split("=")[1]
+	Write-Host "Opening sites..." -ForegroundColor Green
 
-Start-Process https://cm.lighthouse.localhost/sitecore
-Start-Process https://cd.lighthouse.localhost
+	Start-Process https://cm.lighthouse.localhost/sitecore
+	Start-Process https://cd.lighthouse.localhost
+	Start-Process https://$ASPNET_HOST
+	Start-Process https://$NextJS_HOST
+	Start-Process https://$Angular_HOST
+	Start-Process https://$React_HOST
+}

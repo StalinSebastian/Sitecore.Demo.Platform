@@ -54,7 +54,7 @@ else
 }
 
 #Install and Import SitecoreDockerTools
-$dockerToolsVersion = "10.1.4"
+$dockerToolsVersion = "10.3.40"
 Remove-Module SitecoreDockerTools -ErrorAction SilentlyContinue
 if (-not (Get-InstalledModule -Name SitecoreDockerTools -RequiredVersion $dockerToolsVersion -ErrorAction SilentlyContinue)) {
     Write-Host "Installing SitecoreDockerTools..." -ForegroundColor Green
@@ -62,12 +62,14 @@ if (-not (Get-InstalledModule -Name SitecoreDockerTools -RequiredVersion $docker
 }
 Write-Host "Importing SitecoreDockerTools..." -ForegroundColor Green
 Import-Module SitecoreDockerTools -RequiredVersion $dockerToolsVersion
+Write-SitecoreDockerWelcome
 
 ##################
 # Create .env file
 ##################
 Write-Host "Creating .env file." -ForegroundColor Green
 Copy-Item ".\.env.local" ".\.env" -Force
+
 ##################################
 # Configure TLS/HTTPS certificates
 ##################################
@@ -92,6 +94,11 @@ try {
     Write-Host "Generating Traefik TLS certificate..." -ForegroundColor Green
     & $mkcert -install
     & $mkcert "*.lighthouse.localhost"
+	& $mkcert "lighthouse.localhost"
+	& $mkcert "cm.lighthouse.localhost"
+
+	# stash CAROOT path for messaging at the end of the script
+    $caRoot = "$(& $mkcert -CAROOT)\rootCA.pem"
 }
 catch {
     Write-Error "An error occurred while attempting to generate TLS certificate: $_"
@@ -103,6 +110,17 @@ finally {
 ################################
 # Add Windows hosts file entries
 ################################
+$envContent = Get-Content .env -Encoding UTF8
+$ASPNET_HOST = $envContent | Where-Object { $_ -imatch "^ASPNET_RENDERING_HOST=.+" }
+$ASPNET_HOST = $ASPNET_HOST.Split("=")[1]
+$ASPNETCore_HOST = $envContent | Where-Object { $_ -imatch "^ASPNETCore_RENDERING_HOST=.+" }
+$ASPNETCore_HOST = $ASPNETCore_HOST.Split("=")[1]
+$NextJS_HOST = $envContent | Where-Object { $_ -imatch "^NextJS_RENDERING_HOST=.+" }
+$NextJS_HOST = $NextJS_HOST.Split("=")[1]
+$Angular_HOST = $envContent | Where-Object { $_ -imatch "^Angular_RENDERING_HOST=.+" }
+$Angular_HOST = $Angular_HOST.Split("=")[1]
+$React_HOST = $envContent | Where-Object { $_ -imatch "^React_RENDERING_HOST=.+" }
+$React_HOST = $React_HOST.Split("=")[1]
 
 Write-Host "Adding Windows hosts file entries..." -ForegroundColor Green
 
@@ -113,6 +131,38 @@ Add-HostsEntry "sh.lighthouse.localhost"
 Add-HostsEntry "ts.lighthouse.localhost"
 Add-HostsEntry "www.lighthouse.localhost"
 
+Add-HostsEntry "$ASPNET_HOST"
+Add-HostsEntry "$ASPNETCore_HOST"
+Add-HostsEntry "$NextJS_HOST"
+Add-HostsEntry "$Angular_HOST"
+Add-HostsEntry "$React_HOST"
+##########################
+# Show Certificate Details
+##########################
+Push-Location data\traefik\certs
+try
+{
+    Write-Host
+    Write-Host ("#"*75) -ForegroundColor Cyan
+    Write-Host "To avoid HTTPS errors, set the NODE_EXTRA_CA_CERTS environment variable" -ForegroundColor Cyan
+    Write-Host "using the following commmand:" -ForegroundColor Cyan
+    Write-Host "setx NODE_EXTRA_CA_CERTS $caRoot"
+    Write-Host
+    Write-Host "You will need to restart your terminal or VS Code for it to take effect." -ForegroundColor Cyan
+    Write-Host ("#"*75) -ForegroundColor Cyan
+}
+catch {
+    Write-Error "An error occurred while attempting to generate TLS certificate: $_"
+}
+finally {
+    Pop-Location
+}
+
+################################
+# Generate JSS_EDITING_SECRET
+################################
+$jssEditingSecret = Get-SitecoreRandomString 64 -DisallowSpecial
+Set-EnvFileVariable "JSS_EDITING_SECRET" -Value $jssEditingSecret
 
 ###############################
 # Populate the environment file

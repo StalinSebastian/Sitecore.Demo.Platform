@@ -188,6 +188,11 @@ services:
       - "traefik.http.routers.cd-secure.rule=Host(`${CD_HOST}`)"
       - "traefik.http.routers.cd-secure.tls=true"
       - "traefik.http.routers.cd-secure.middlewares=force-STS-Header"
+      - "traefik.http.routers.play-cd.entrypoints=websecure"
+      - "traefik.http.routers.play-cd.rule=Host(`${ASPNET_RENDERING_HOST}`)"
+      - "traefik.http.routers.play-cd.tls=true"
+    extra_hosts:
+      - "`${ASPNET_RENDERING_HOST}`:127.0.0.1"
     networks:
       demo:
         aliases:
@@ -226,6 +231,49 @@ services:
         condition: service_healthy
     networks:
       - demo
+
+  nodejs:
+    image: ${REGISTRY}demo/lighthouse-nodejs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    build:
+      context: ./docker/images/windows/demo-nodejs
+      args:
+        PARENT_IMAGE: ${NODEJS_PARENT_IMAGE}
+        NODEJS_VERSION: ${NODEJS_VERSION}
+    deploy:
+      replicas: 0
+
+  playapp-nodejs:
+    image: ${REGISTRY}demo/lighthouse-playapp-nodejs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    build:
+      context: ./docker/images/windows/demo-playapp
+      target: debug
+      args:
+        PARENT_IMAGE: ${REGISTRY}demo/lighthouse-nodejs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    volumes:
+      - .\src\Project\PlayApp\nextjs:C:\app
+    environment:
+      SITECORE_API_HOST: "http://cm"
+      NEXTJS_DIST_DIR: ".next"
+      PUBLIC_URL: "https://${NextJS_RENDERING_HOST}"
+      JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
+      SITECORE_API_KEY: "${SITECORE_API_KEY}"
+      FETCH_WITH: "GraphQL"
+      NODE_ENV: ${NODE_ENV}
+    depends_on:
+      - cm
+      - nodejs
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.playapp-nodejs-secure.entrypoints=websecure"
+      - "traefik.http.routers.playapp-nodejs-secure.rule=Host(`${NextJS_RENDERING_HOST}`)"
+      - "traefik.http.routers.playapp-nodejs-secure.tls=true"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/healthz"]
+      interval: 60s
+      timeout: 30s
+    networks:
+      - demo
+
 
 networks:
   demo:
