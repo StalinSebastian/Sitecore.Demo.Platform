@@ -44,7 +44,7 @@ services:
     networks:
       - demo
   solr-init:
-    image: ${REGISTRY}community/sitecore-xp1-custom-sxa-solr-init:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
+    # image: ${REGISTRY}community/sitecore-xp1-custom-sxa-solr-init:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
     networks:
       - demo
   id:
@@ -81,96 +81,96 @@ services:
       - ${HOST_LICENSE_FOLDER}:c:\license
     environment:
       SITECORE_LICENSE_LOCATION: c:\license\license.xml
-      SITECORE_CONNECTIONSTRINGS_CMP.ContentHub: ${CMP_CONTENTHUB}
-      SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusEntityPathIn: ${CMP_SERVICEBUSENTITYPATHIN}
-      SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusSubscription: ${CMP_SERVICEBUSSUBSCRIPTION}
-      SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusEntityPathOut: ${CMP_SERVICEBUSENTITYPATHOUT}
+      # SITECORE_CONNECTIONSTRINGS_CMP.ContentHub: ${CMP_CONTENTHUB}
+      # SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusEntityPathIn: ${CMP_SERVICEBUSENTITYPATHIN}
+      # SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusSubscription: ${CMP_SERVICEBUSSUBSCRIPTION}
+      # SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusEntityPathOut: ${CMP_SERVICEBUSENTITYPATHOUT}
       SITECORE_CONNECTIONSTRINGS_Sitecore.Services.Token.SecurityKey: key=${SITECORE_SERVICES_TOKEN_SECURITYKEY}
     networks:
       demo:
         aliases:
           - "${CM_HOST}"
-  prc:
-    image: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp1-prc:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license\license.xml
-    networks:
-      - demo
-  xdbcollection:
-    image: ${REGISTRY}demo/lighthouse-xp1-xdbcollection:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license\license.xml
-    networks:
-      - demo
-  xdbsearch:
-    image: ${REGISTRY}demo/lighthouse-xp1-xdbsearch:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license\license.xml
-    networks:
-      - demo
-  xdbautomation:
-    image: ${REGISTRY}demo/lighthouse-xp1-xdbautomation:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license\license.xml
-    networks:
-      - demo
-  xdbautomationrpt:
-    image: ${REGISTRY}demo/lighthouse-xp1-xdbautomationrpt:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license\license.xml
-    networks:
-      - demo
-  cortexprocessing:
-    image: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp1-cortexprocessing:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license\license.xml
-    networks:
-      - demo
-  cortexprocessingworker:
-    image: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp1-cortexprocessingworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license\license.xml
-    networks:
-      - demo
-  cortexreporting:
-    image: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp1-cortexreporting:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license\license.xml
-    networks:
-      - demo
-  xdbrefdata:
-    image: ${REGISTRY}demo/lighthouse-xp1-xdbrefdata:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license\license.xml
-    networks:
-      - demo
-  xdbsearchworker:
-    image: ${REGISTRY}demo/lighthouse-xp1-xdbsearchworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license\license.xml
-    networks:
-      - demo
-  xdbautomationworker:
+  # prc:
+  #   image: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp1-prc:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
+  #   volumes:
+  #     - ${HOST_LICENSE_FOLDER}:c:\license
+  #   environment:
+  #     SITECORE_LICENSE_LOCATION: c:\license\license.xml
+  #   networks:
+  #     - demo
+  # xdbcollection:
+  #   image: ${REGISTRY}demo/lighthouse-xp1-xdbcollection:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #   volumes:
+  #     - ${HOST_LICENSE_FOLDER}:c:\license
+  #   environment:
+  #     SITECORE_LICENSE_LOCATION: c:\license\license.xml
+  #   networks:
+  #     - demo
+  # xdbsearch:
+  #   image: ${REGISTRY}demo/lighthouse-xp1-xdbsearch:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #   volumes:
+  #     - ${HOST_LICENSE_FOLDER}:c:\license
+  #   environment:
+  #     SITECORE_LICENSE_LOCATION: c:\license\license.xml
+  #   networks:
+  #     - demo
+  # xdbautomation:
+  #   image: ${REGISTRY}demo/lighthouse-xp1-xdbautomation:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #   volumes:
+  #     - ${HOST_LICENSE_FOLDER}:c:\license
+  #   environment:
+  #     SITECORE_LICENSE_LOCATION: c:\license\license.xml
+  #   networks:
+  #     - demo
+  # xdbautomationrpt:
+  #   image: ${REGISTRY}demo/lighthouse-xp1-xdbautomationrpt:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #   volumes:
+  #     - ${HOST_LICENSE_FOLDER}:c:\license
+  #   environment:
+  #     SITECORE_LICENSE_LOCATION: c:\license\license.xml
+  #   networks:
+  #     - demo
+  # cortexprocessing:
+  #   image: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp1-cortexprocessing:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
+  #   volumes:
+  #     - ${HOST_LICENSE_FOLDER}:c:\license
+  #   environment:
+  #     SITECORE_LICENSE_LOCATION: c:\license\license.xml
+  #   networks:
+  #     - demo
+  # cortexprocessingworker:
+  #   image: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp1-cortexprocessingworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
+  #   volumes:
+  #     - ${HOST_LICENSE_FOLDER}:c:\license
+  #   environment:
+  #     SITECORE_LICENSE_LOCATION: c:\license\license.xml
+  #   networks:
+  #     - demo
+  # cortexreporting:
+  #   image: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp1-cortexreporting:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
+  #   volumes:
+  #     - ${HOST_LICENSE_FOLDER}:c:\license
+  #   environment:
+  #     SITECORE_LICENSE_LOCATION: c:\license\license.xml
+  #   networks:
+  #     - demo
+  # xdbrefdata:
+  #   image: ${REGISTRY}demo/lighthouse-xp1-xdbrefdata:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #   volumes:
+  #     - ${HOST_LICENSE_FOLDER}:c:\license
+  #   environment:
+  #     SITECORE_LICENSE_LOCATION: c:\license\license.xml
+  #   networks:
+  #     - demo
+  # xdbsearchworker:
+  #   image: ${REGISTRY}demo/lighthouse-xp1-xdbsearchworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #   volumes:
+  #     - ${HOST_LICENSE_FOLDER}:c:\license
+  #   environment:
+  #     SITECORE_LICENSE_LOCATION: c:\license\license.xml
+  #   networks:
+  #     - demo
+  # xdbautomationworker:
     image: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp1-xdbautomationworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
     volumes:
       - ${HOST_LICENSE_FOLDER}:c:\license

@@ -12,7 +12,7 @@ services:
         TOOLS_IMAGE: ${SITECORE_DOCKER_REGISTRY}tools/sitecore-docker-tools-assets:${TOOLS_VERSION}-${SITECORE_ASSET_NANOSERVER_VERSION}
 
   solr-init:
-    image: ${REGISTRY}demo/lighthouse-xp0-solr-init:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    #image: ${REGISTRY}demo/lighthouse-xp0-solr-init:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
     build:
       context:
         .\docker\images\windows\demo-solr-init
@@ -20,17 +20,17 @@ services:
         BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp0-solr-init:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
         SXA_ASSETS: ${SITECORE_DOCKER_REGISTRY}sxp/modules/sitecore-sxa-xp1-assets:${SITECORE_VERSION}-${SITECORE_ASSET_NANOSERVER_VERSION}
 
-  xdbsearchworker:
-    image: ${REGISTRY}demo/lighthouse-xp0-xdbsearchworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    build:
-      context: .\docker\images\windows\demo-xdbsearchworker
-      args:
-        SOLUTION_IMAGE: ${REGISTRY}build/lighthouse-solution:${SITECORE_VERSION}-${NANOSERVER_VERSION}-${SOLUTION_VERSION}
-        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp0-xdbsearchworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
-        TOOLS_ASSETS: ${SITECORE_DOCKER_REGISTRY}tools/sitecore-docker-tools-assets:${TOOLS_VERSION}-${SITECORE_ASSET_NANOSERVER_VERSION}
-        GP_IMAGE : ${SITECORE_DOCKER_REGISTRY}sxp/modules/gp-xp0-assets:1.0-${NANOSERVER_VERSION}
-    depends_on:
-      - solution
+  # xdbsearchworker:
+  #   image: ${REGISTRY}demo/lighthouse-xp0-xdbsearchworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #   build:
+  #     context: .\docker\images\windows\demo-xdbsearchworker
+  #     args:
+  #       SOLUTION_IMAGE: ${REGISTRY}build/lighthouse-solution:${SITECORE_VERSION}-${NANOSERVER_VERSION}-${SOLUTION_VERSION}
+  #       BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp0-xdbsearchworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
+  #       TOOLS_ASSETS: ${SITECORE_DOCKER_REGISTRY}tools/sitecore-docker-tools-assets:${TOOLS_VERSION}-${SITECORE_ASSET_NANOSERVER_VERSION}
+  #       GP_IMAGE : ${SITECORE_DOCKER_REGISTRY}sxp/modules/gp-xp0-assets:1.0-${NANOSERVER_VERSION}
+  #   depends_on:
+  #     - solution
 
   mssql-init:
     isolation: ${ISOLATION}
@@ -84,28 +84,28 @@ services:
     depends_on:
       - solution
 
-  xconnect:
-    image: ${REGISTRY}demo/lighthouse-xp0-xconnect:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    build:
-      context: .\docker\images\windows\demo-xconnect
-      args:
-        SOLUTION_IMAGE: ${REGISTRY}build/lighthouse-solution:${SITECORE_VERSION}-${NANOSERVER_VERSION}-${SOLUTION_VERSION}
-        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp0-xconnect:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
-        TOOLS_ASSETS: ${SITECORE_DOCKER_REGISTRY}tools/sitecore-docker-tools-assets:${TOOLS_VERSION}-${SITECORE_ASSET_NANOSERVER_VERSION}
-        GP_IMAGE : ${SITECORE_DOCKER_REGISTRY}sxp/modules/gp-xp0-assets:1.0-${NANOSERVER_VERSION}
-    depends_on:
-      - solution
+  # xconnect:
+  #   image: ${REGISTRY}demo/lighthouse-xp0-xconnect:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #   build:
+  #     context: .\docker\images\windows\demo-xconnect
+  #     args:
+  #       SOLUTION_IMAGE: ${REGISTRY}build/lighthouse-solution:${SITECORE_VERSION}-${NANOSERVER_VERSION}-${SOLUTION_VERSION}
+  #       BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp0-xconnect:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
+  #       TOOLS_ASSETS: ${SITECORE_DOCKER_REGISTRY}tools/sitecore-docker-tools-assets:${TOOLS_VERSION}-${SITECORE_ASSET_NANOSERVER_VERSION}
+  #       GP_IMAGE : ${SITECORE_DOCKER_REGISTRY}sxp/modules/gp-xp0-assets:1.0-${NANOSERVER_VERSION}
+  #   depends_on:
+  #     - solution
 
-  xdbautomationworker:
-    image: ${REGISTRY}demo/lighthouse-xp0-xdbautomationworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    build:
-      context: .\docker\images\windows\demo-automationengine
-      args:
-        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp0-xdbautomationworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
-        TOOLS_ASSETS: ${SITECORE_DOCKER_REGISTRY}tools/sitecore-docker-tools-assets:${TOOLS_VERSION}-${SITECORE_ASSET_NANOSERVER_VERSION}
-        GP_IMAGE : ${SITECORE_DOCKER_REGISTRY}sxp/modules/gp-xp0-assets:1.0-${NANOSERVER_VERSION}
-    depends_on:
-      - solution
+  # xdbautomationworker:
+  #   image: ${REGISTRY}demo/lighthouse-xp0-xdbautomationworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #   build:
+  #     context: .\docker\images\windows\demo-automationengine
+  #     args:
+  #       BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xp0-xdbautomationworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
+  #       TOOLS_ASSETS: ${SITECORE_DOCKER_REGISTRY}tools/sitecore-docker-tools-assets:${TOOLS_VERSION}-${SITECORE_ASSET_NANOSERVER_VERSION}
+  #       GP_IMAGE : ${SITECORE_DOCKER_REGISTRY}sxp/modules/gp-xp0-assets:1.0-${NANOSERVER_VERSION}
+  #   depends_on:
+  #     - solution
 
   init:
     image: ${REGISTRY}demo/lighthouse-init:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}

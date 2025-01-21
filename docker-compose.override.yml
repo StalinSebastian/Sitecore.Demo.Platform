@@ -57,7 +57,7 @@ services:
   # Mount our Solr data folder and use our retagged Solr image.
   # Some modules (like SXA) also require additions to the Solr image.
   solr-init:
-    image: ${REGISTRY}demo/lighthouse-xp0-solr-init:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #  image: ${REGISTRY}demo/lighthouse-xp0-solr-init:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
     networks:
       - demo
 
@@ -73,20 +73,22 @@ services:
       - demo
 
   cm:
-    image: ${REGISTRY}demo/lighthouse-xp0-cm:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    entrypoint: powershell.exe -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1 -WatchDirectoryParameters @{ Path = 'C:\\src'; Destination = 'C:\\inetpub\\wwwroot'; ExcludeFiles = @('C:\\src\\Web.config'); }"
-    mem_limit: 6G
+    image: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xm1-cm:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
+    # image: ${REGISTRY}demo/lighthouse-xp0-cm:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    #entrypoint: powershell.exe -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1 -WatchDirectoryParameters @{ Path = 'C:\\src'; Destination = 'C:\\inetpub\\wwwroot'; ExcludeFiles = @('C:\\src\\Web.config'); }"
+    mem_limit: 8G
     environment:
+      SITECORE_XDB_ENABLED: false
       SITECORE_LICENSE_LOCATION: c:\license\license.xml
       SITECORE_APPSETTINGS_SXAXM:DEFINE: sxaxconnect
       SITECORE_APPSETTINGS_ENV:DEFINE: Docker
-      SITECORE_APPSETTINGS_CONTENTHUB:DEFINE: Enabled
-      SITECORE_CONNECTIONSTRINGS_CMP.ContentHub: ${CMP_CONTENTHUB}
-      SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusEntityPathIn: ${CMP_SERVICEBUSENTITYPATHIN}
-      SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusSubscription: ${CMP_SERVICEBUSSUBSCRIPTION}
-      SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusEntityPathOut: ${CMP_SERVICEBUSENTITYPATHOUT}
-      SITECORE_CONNECTIONSTRINGS_DAM.ContentHub: URI=${DAM_URL}
-      SITECORE_CONNECTIONSTRINGS_DAM.SearchPage: ${DAM_URL}/en-us/sitecore-dam-connect/approved-assets
+      # SITECORE_APPSETTINGS_CONTENTHUB:DEFINE: Enabled
+      # SITECORE_CONNECTIONSTRINGS_CMP.ContentHub: ${CMP_CONTENTHUB}
+      # SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusEntityPathIn: ${CMP_SERVICEBUSENTITYPATHIN}
+      # SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusSubscription: ${CMP_SERVICEBUSSUBSCRIPTION}
+      # SITECORE_CONNECTIONSTRINGS_CMP.ServiceBusEntityPathOut: ${CMP_SERVICEBUSENTITYPATHOUT}
+      # SITECORE_CONNECTIONSTRINGS_DAM.ContentHub: URI=${DAM_URL}
+      # SITECORE_CONNECTIONSTRINGS_DAM.SearchPage: ${DAM_URL}/en-us/sitecore-dam-connect/approved-assets
       SITECORE_CONNECTIONSTRINGS_Sitecore.Services.Token.SecurityKey: key=${SITECORE_SERVICES_TOKEN_SECURITYKEY}
       EXM_RENDERER_URL: http://cm
       HOST_CD: http://cd
@@ -99,54 +101,55 @@ services:
     depends_on:
       id:
         condition: service_healthy
-      xconnect:
-        condition: service_healthy
+      #xconnect:
+      #  condition: service_healthy
     networks:
       demo:
         aliases:
           - "${CM_HOST}"
 
-  xconnect:
-    image: ${REGISTRY}demo/lighthouse-xp0-xconnect:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    # TODO: Do we need a specific xConnect entrypoint like in 9.3?
-    entrypoint: powershell.exe -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1 -WatchDirectoryParameters @{ Path = 'C:\\src'; Destination = 'C:\\inetpub\\wwwroot'; ExcludeFiles = @('Web.config'); }"
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-      - .\data\xconnect\src:C:\src
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license
-    depends_on:
-      mssql-init:
-        condition: service_healthy
-      solr:
-        condition: service_healthy
-    networks:
-      - demo
+  #xconnect:
+  #  image: ${REGISTRY}demo/lighthouse-xp0-xconnect:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #  # TODO: Do we need a specific xConnect entrypoint like in 9.3?
+  #  entrypoint: powershell.exe -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1 -WatchDirectoryParameters @{ Path = 'C:\\src'; Destination = 'C:\\inetpub\\wwwroot'; ExcludeFiles = @('Web.config'); }"
+  #  volumes:
+  #    - ${HOST_LICENSE_FOLDER}:c:\license
+  #    - .\data\xconnect\src:C:\src
+  #  environment:
+  #    SITECORE_LICENSE_LOCATION: c:\license
+  #  depends_on:
+  #    mssql-init:
+  #      condition: service_healthy
+  #    solr:
+  #      condition: service_healthy
+  #  networks:
+  #    - demo
 
-  xdbsearchworker:
-    image: ${REGISTRY}demo/lighthouse-xp0-xdbsearchworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    entrypoint: powershell.exe -Command "& C:\\tools\\entrypoints\\worker\\Development.ps1 -WatchDirectoryParameters @{ Path = 'C:\\src'; Destination = 'C:\\service'; }"
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-      - .\data\indexworker\src:C:\src
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license
-    networks:
-      - demo
+  #xdbsearchworker:
+  #  image: ${REGISTRY}demo/lighthouse-xp0-xdbsearchworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #  entrypoint: powershell.exe -Command "& C:\\tools\\entrypoints\\worker\\Development.ps1 -WatchDirectoryParameters @{ Path = 'C:\\src'; Destination = 'C:\\service'; }"
+  #  volumes:
+  #    - ${HOST_LICENSE_FOLDER}:c:\license
+  #    - .\data\indexworker\src:C:\src
+  #  environment:
+  #    SITECORE_LICENSE_LOCATION: c:\license
+  #  networks:
+  #    - demo
 
-  xdbautomationworker:
-    image: ${REGISTRY}demo/lighthouse-xp0-xdbautomationworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    volumes:
-      - ${HOST_LICENSE_FOLDER}:c:\license
-    environment:
-      SITECORE_LICENSE_LOCATION: c:\license
-    networks:
-      - demo
+  #xdbautomationworker:
+  #  image: ${REGISTRY}demo/lighthouse-xp0-xdbautomationworker:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #  volumes:
+  #    - ${HOST_LICENSE_FOLDER}:c:\license
+  #  environment:
+  #    SITECORE_LICENSE_LOCATION: c:\license
+  #  networks:
+  #    - demo
 
   cd:
     isolation: ${ISOLATION}
-    image: ${REGISTRY}demo/lighthouse-xp0-cd:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
-    entrypoint: powershell.exe -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1 -WatchDirectoryParameters @{ Path = 'C:\\src'; Destination = 'C:\\inetpub\\wwwroot'; ExcludeFiles = @('Web.config'); }"
+    image: ${SITECORE_DOCKER_REGISTRY}sxp/sitecore-xm1-cd:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
+    #image: ${REGISTRY}demo/lighthouse-xp0-cd:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    #entrypoint: powershell.exe -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1 -WatchDirectoryParameters @{ Path = 'C:\\src'; Destination = 'C:\\inetpub\\wwwroot'; ExcludeFiles = @('Web.config'); }"
     deploy:
       replicas: ${CD_CONTAINERS_COUNT}
     environment:
@@ -156,28 +159,32 @@ services:
       SOLR_CORE_PREFIX_NAME: ${SOLR_CORE_PREFIX_NAME}
       Sitecore_ConnectionStrings_Security: Data Source=mssql;Initial Catalog=Sitecore.Core;User ID=sa;Password=${SQL_SA_PASSWORD}
       Sitecore_ConnectionStrings_Web: Data Source=mssql;Initial Catalog=Sitecore.Web;User ID=sa;Password=${SQL_SA_PASSWORD}
-      Sitecore_ConnectionStrings_Messaging: Data Source=mssql;Initial Catalog=Sitecore.Messaging;User ID=sa;Password=${SQL_SA_PASSWORD}
+      #Sitecore_ConnectionStrings_Messaging: Data Source=mssql;Initial Catalog=Sitecore.Messaging;User ID=sa;Password=${SQL_SA_PASSWORD}
       Sitecore_ConnectionStrings_ExperienceForms: Data Source=mssql;Initial Catalog=Sitecore.ExperienceForms;User ID=sa;Password=${SQL_SA_PASSWORD}
-      Sitecore_ConnectionStrings_Exm.Master: Data Source=mssql;Initial Catalog=Sitecore.Exm.master;User ID=sa;Password=${SQL_SA_PASSWORD}
+      #Sitecore_ConnectionStrings_Exm.Master: Data Source=mssql;Initial Catalog=Sitecore.Exm.master;User ID=sa;Password=${SQL_SA_PASSWORD}
       Sitecore_ConnectionStrings_Solr.Search: http://solr:8983/solr
-      Sitecore_ConnectionStrings_XConnect.Collection: http://xconnect
-      Sitecore_ConnectionStrings_Xdb.MarketingAutomation.Operations.Client: http://xconnect
-      Sitecore_ConnectionStrings_Xdb.MarketingAutomation.Reporting.Client: http://xconnect
-      Sitecore_ConnectionStrings_Xdb.ReferenceData.Client: http://xconnect
+      Sitecore_ConnectionStrings_Redis.Sessions: redis:6379,ssl=False,abortConnect=False
+      #Sitecore_ConnectionStrings_XConnect.Collection: http://xconnect
+      #Sitecore_ConnectionStrings_Xdb.MarketingAutomation.Operations.Client: http://xconnect
+      #Sitecore_ConnectionStrings_Xdb.MarketingAutomation.Reporting.Client: http://xconnect
+      #Sitecore_ConnectionStrings_Xdb.ReferenceData.Client: http://xconnect
       Sitecore_ConnectionStrings_Sitecore.Services.Token.SecurityKey: key=${SITECORE_SERVICES_TOKEN_SECURITYKEY}
       EXM_RENDERER_URL: http://cm
       DEPENDENCY_INJECTION_IGNORED_ASSEMBLIES: ${DEPENDENCY_INJECTION_IGNORED_ASSEMBLIES}
+      MEDIA_REQUEST_PROTECTION_SHARED_SECRET: ${MEDIA_REQUEST_PROTECTION_SHARED_SECRET}
+      LOG_LEVEL_VALUE: ${LOG_LEVEL_VALUE}
     volumes:
       - ${HOST_LICENSE_FOLDER}:c:\license
       - .\data\cd\src:C:\src
       - .\data\cd\backup:c:\backup
+      #- .\data\cd\device-detection-data:C:/inetpub/wwwroot/App_Data/DeviceDetection
     depends_on:
       mssql-init:
         condition: service_healthy
       solr:
         condition: service_healthy
-      xconnect:
-        condition: service_healthy
+      #xconnect:
+      #  condition: service_healthy
     healthcheck:
       test: ["CMD", "powershell", "ps"]
     labels:
@@ -198,16 +205,16 @@ services:
         aliases:
           - "${CD_HOST}"
 
-  smtp:
-    image: rnwood/smtp4dev
-    isolation: ${SMTP_ISOLATION}
-    ports:
-      - "44025:25"
-      - "44026:80"
-    networks:
-      - demo
-    deploy:
-      replicas: ${SMTP_CONTAINERS_COUNT}
+  # smtp:
+  #   image: rnwood/smtp4dev
+  #   isolation: ${SMTP_ISOLATION}
+  #   ports:
+  #     - "44025:25"
+  #     - "44026:80"
+  #   networks:
+  #     - demo
+  #   deploy:
+  #     replicas: ${SMTP_CONTAINERS_COUNT}
 
   init:
     healthcheck:
@@ -274,6 +281,69 @@ services:
     networks:
       - demo
 
+  #playapp-angular:
+  #  image: ${REGISTRY}demo/lighthouse-playapp-angular:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #  build:
+  #    context: ./docker/images/windows/demo-playapp
+  #    target: debug
+  #    args:
+  #      PARENT_IMAGE: ${REGISTRY}demo/lighthouse-nodejs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #  volumes:
+  #    - .\src\Project\PlayApp\angular:C:\app
+  #  environment:
+  #    SITECORE_API_HOST: "http://cm"
+  #    NEXTJS_DIST_DIR: ".next"
+  #    PUBLIC_URL: "https://${Angular_RENDERING_HOST}"
+  #    JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
+  #    SITECORE_API_KEY: "${SITECORE_API_KEY}"
+  #    FETCH_WITH: "GraphQL"
+  #    NODE_ENV: ${NODE_ENV}
+  #  depends_on:
+  #    - cm
+  #    - nodejs
+  #  labels:
+  #    - "traefik.enable=true"
+  #    - "traefik.http.routers.playapp-angular-secure.entrypoints=websecure"
+  #    - "traefik.http.routers.playapp-angular-secure.rule=Host(`${Angular_RENDERING_HOST}`)"
+  #    - "traefik.http.routers.playapp-angular-secure.tls=true"
+  #  healthcheck:
+  #    test: ["CMD", "curl", "-f", "http://localhost:3000/api/healthz"]
+  #    interval: 60s
+  #    timeout: 30s
+  #  networks:
+  #    - demo
+
+  # playapp-react:
+  #   image: ${REGISTRY}demo/lighthouse-playapp-react:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #   build:
+  #     context: ./docker/images/windows/demo-playapp
+  #     target: debug
+  #     args:
+  #       PARENT_IMAGE: ${REGISTRY}demo/lighthouse-nodejs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  #   volumes:
+  #     - .\src\Project\PlayApp\react:C:\app
+  #   environment:
+  #     SITECORE_API_HOST: "http://cm"
+  #     NEXTJS_DIST_DIR: ".next"
+  #     PUBLIC_URL: "https://${React_RENDERING_HOST}"
+  #     JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
+  #     SITECORE_API_KEY: "${SITECORE_API_KEY}"
+  #     FETCH_WITH: "GraphQL"
+  #     NODE_ENV: ${NODE_ENV}
+  #   depends_on:
+  #     - cm
+  #     - nodejs
+  #   labels:
+  #     - "traefik.enable=true"
+  #     - "traefik.http.routers.playapp-react-secure.entrypoints=websecure"
+  #     - "traefik.http.routers.playapp-react-secure.rule=Host(`${React_RENDERING_HOST}`)"
+  #     - "traefik.http.routers.playapp-react-secure.tls=true"
+  #   healthcheck:
+  #     test: ["CMD", "curl", "-f", "http://localhost:3000/api/healthz"]
+  #     interval: 60s
+  #     timeout: 30s
+  #   networks:
+  #     - demo
 
 networks:
   demo:
