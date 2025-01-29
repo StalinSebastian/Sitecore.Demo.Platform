@@ -257,7 +257,7 @@ services:
       PUBLIC_URL: "https://${NextJS_RENDERING_HOST}"
       JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
       SITECORE_API_KEY: "${SITECORE_API_KEY}"
-      FETCH_WITH: "GraphQL"
+      FETCH_WITH: "REST"
       NODE_ENV: ${NODE_ENV}
     depends_on:
       - cm
