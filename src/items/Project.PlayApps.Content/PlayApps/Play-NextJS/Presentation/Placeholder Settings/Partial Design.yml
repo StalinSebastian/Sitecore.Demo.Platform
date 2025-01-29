@@ -1,0 +1,13 @@
+﻿---
+ID: "36acc6d8-6718-4c16-9c2b-0303d095a5a9"
+Parent: "522a98b4-f75d-49d1-bf51-43eff9dfaf42"
+Template: "52288e39-7830-4694-b62d-32a54c6ef7ba"
+Path: "/sitecore/content/PlayApps/Play-NextJS/Presentation/Placeholder Settings/Partial Design"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "519ec0b7-7c2f-48be-af4f-bc070831c23e"

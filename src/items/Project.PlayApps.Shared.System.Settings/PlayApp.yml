@@ -1,0 +1,13 @@
+﻿---
+ID: "cdcdc8dc-4a01-4657-95b0-64c8b992c799"
+Parent: "59b41b5f-e22e-460b-941e-fb64fe8da8fc"
+Template: "a6868d65-d612-401f-a40a-cd5ba0857b81"
+Path: /sitecore/system/Settings/Services/API Keys/PlayApp
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b35e22bf-ff8c-4fa2-b062-e1b324732f99"

@@ -1,6 +1,6 @@
 import {
-	GraphQLRequestClientFactoryConfig,
-	GraphQLRequestClient,
+  GraphQLRequestClientFactoryConfig,
+  GraphQLRequestClient,
 } from '@sitecore-jss/sitecore-jss-nextjs/graphql';
 import { JssConfig } from 'lib/config';
 
@@ -10,16 +10,16 @@ import { JssConfig } from 'lib/config';
  * @returns GraphQLRequestClientFactory instance
  */
 export const createGraphQLClientFactory = (config: JssConfig) => {
-	let clientConfig: GraphQLRequestClientFactoryConfig;
+  let clientConfig: GraphQLRequestClientFactoryConfig;
 
-	if (config.graphQLEndpoint && config.sitecoreApiKey) {
-		clientConfig = {
-			endpoint: config.graphQLEndpoint,
-			apiKey: config.sitecoreApiKey,
-		};
-	} else {
-		throw new Error('Please configure your graphQLEndpoint and sitecoreApiKey.');
-	}
+  if (config.graphQLEndpoint && config.sitecoreApiKey) {
+    clientConfig = {
+      endpoint: config.graphQLEndpoint,
+      apiKey: config.sitecoreApiKey,
+    };
+  } else {
+    throw new Error('Please configure your graphQLEndpoint and sitecoreApiKey.');
+  }
 
-	return GraphQLRequestClient.createClientFactory(clientConfig);
+  return GraphQLRequestClient.createClientFactory(clientConfig);
 };

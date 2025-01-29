@@ -1,0 +1,17 @@
+﻿---
+ID: "31f16b71-2afa-42ab-940e-ba5c4bf22294"
+Parent: "36acc6d8-6718-4c16-9c2b-0303d095a5a9"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: "/sitecore/content/PlayApps/Play-NextJS/Presentation/Placeholder Settings/Partial Design/Footer"
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "sxa-footer"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d9946f5b-6ffa-4164-aae8-077cfc71c06d"

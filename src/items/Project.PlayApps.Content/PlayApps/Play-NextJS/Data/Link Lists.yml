@@ -1,0 +1,13 @@
+﻿---
+ID: "21b514ec-bd70-460f-9294-e621fbea70ab"
+Parent: "62622a14-3981-4574-a174-9289c62ba3b8"
+Template: "c237d144-647a-4afe-aa7b-1570f3e3f139"
+Path: "/sitecore/content/PlayApps/Play-NextJS/Data/Link Lists"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0caa6dde-97e4-4e3e-9a72-36e1946eccf0"

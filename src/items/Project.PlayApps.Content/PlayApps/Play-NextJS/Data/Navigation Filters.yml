@@ -1,0 +1,13 @@
+﻿---
+ID: "6e36dd81-5ea2-4644-9c1e-c54e2028d539"
+Parent: "62622a14-3981-4574-a174-9289c62ba3b8"
+Template: "9c2d0fdf-4daf-4494-bde7-f857f1924825"
+Path: "/sitecore/content/PlayApps/Play-NextJS/Data/Navigation Filters"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "01b05239-e21c-43a3-9418-643c189eaa30"

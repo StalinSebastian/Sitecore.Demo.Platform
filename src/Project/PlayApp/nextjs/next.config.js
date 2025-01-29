@@ -54,10 +54,17 @@ const nextConfig = {
         port: '',
       },
       {
+        protocol: 'http',
+        hostname: 'cm', // Your image hostname
+        port: '',       // Specify the port if required (leave empty for default ports)
+        pathname: '/-/jssmedia/**', // Match the image path pattern
+      },
+      {
         protocol: 'https',
-        hostname: '*.lighthouse.localhost',
-        port: '',
-      }
+        hostname: 'cm', // Your image hostname
+        port: '',       // Specify the port if required (leave empty for default ports)
+        pathname: '/-/media/**', // Match the image path pattern
+      },
     ]
   },
 
@@ -83,6 +90,16 @@ const nextConfig = {
       {
         source: '/sitecore/service/:path*',
         destination: `${jssConfig.sitecoreApiHost}/sitecore/service/:path*`,
+      },
+      // rewrite for Sitecore media items
+      {
+        source: '/-/media/:path*',
+        destination: `${jssConfig.sitecoreApiHost}/-/jssmedia/:path*`,
+      },
+      // rewrite for Sitecore API
+      {
+        source: '/api/jss/:path*',
+        destination: `${jssConfig.sitecoreApiHost}/api/jss/:path*`
       },
     ];
   },

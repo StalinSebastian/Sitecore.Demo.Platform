@@ -1,0 +1,13 @@
+﻿---
+ID: "bc177980-dd39-43ca-9262-1038c13941ca"
+Parent: "ae8e8117-9437-4a18-8b72-127bcf7c752c"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: "/sitecore/media library/Project/PlayApps/Play-NextJS/Sitemaps"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "452532e6-1f58-4360-aa67-04dee1d7372e"

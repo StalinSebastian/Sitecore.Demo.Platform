@@ -1,0 +1,13 @@
+﻿---
+ID: "c6e936fb-9015-4cf6-90d3-67b58ae5999e"
+Parent: "62622a14-3981-4574-a174-9289c62ba3b8"
+Template: "8fe7f8dc-cb5d-42c2-99f8-76608c243f10"
+Path: "/sitecore/content/PlayApps/Play-NextJS/Data/Promos"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "edc132e4-e84b-4480-8111-cf06073269bb"

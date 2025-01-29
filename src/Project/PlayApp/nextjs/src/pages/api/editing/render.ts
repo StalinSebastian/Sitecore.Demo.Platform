@@ -3,7 +3,7 @@ import { EditingRenderMiddleware } from '@sitecore-jss/sitecore-jss-nextjs/editi
 /**
  * This Next.js API route is used to handle POST requests from Sitecore editors.
  * This route should match the `serverSideRenderingEngineEndpointUrl` in your Sitecore configuration,
- * which is set to "http://localhost:3000/api/editing/render" by default (see \sitecore\config\play-app.config).
+ * which is set to "http://localhost:3000/api/editing/render" by default (see \sitecore\config\PlayNext.config).
  *
  * The `EditingRenderMiddleware` will
  *  1. Extract editing data from the Sitecore editor POST request
@@ -23,12 +23,12 @@ import { EditingRenderMiddleware } from '@sitecore-jss/sitecore-jss-nextjs/editi
 // Bump body size limit (1mb by default) and disable response limit for Sitecore editor payloads
 // See https://nextjs.org/docs/api-routes/request-helpers#custom-config
 export const config = {
-	api: {
-		bodyParser: {
-			sizeLimit: '2mb',
-		},
-		responseLimit: false,
-	},
+  api: {
+    bodyParser: {
+      sizeLimit: '2mb',
+    },
+    responseLimit: false,
+  },
 };
 
 // Wire up the EditingRenderMiddleware handler

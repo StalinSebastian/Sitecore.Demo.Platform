@@ -1,0 +1,13 @@
+﻿---
+ID: "837a5688-b946-49e1-9f29-8f4dd09fe4d8"
+Parent: "62622a14-3981-4574-a174-9289c62ba3b8"
+Template: "25a6b824-672f-4c15-9b98-0b231c80f81c"
+Path: "/sitecore/content/PlayApps/Play-NextJS/Data/Tags"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "21f05e99-fb01-4b3a-8f37-7ce997950fe5"

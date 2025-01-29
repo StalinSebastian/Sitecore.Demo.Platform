@@ -1,0 +1,20 @@
+﻿---
+ID: "a53f0f67-2f15-4e73-b6c7-2b90286d44b5"
+Parent: "ae547193-91c5-4e59-a3fb-e18377d39860"
+Template: "6abee1f2-4ab4-47f0-ad8b-bdb36f37f64c"
+Path: "/sitecore/Forms/PlayApps/PlayNext - Contact Us"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 
+- ID: "c0ce58b7-2592-439d-b197-ca27bf69f7b2"
+  Hint: Is Robot Detection Enabled
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "90cfc6b6-ec9d-4a54-a6fe-c420625ee7bd"

@@ -1,0 +1,13 @@
+﻿---
+ID: "25235ec7-a6a3-45c8-a259-451715fd48b3"
+Parent: "28a106ef-1da2-4ae7-bfd7-651e20c97903"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/PlayApps/Page/Content
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7e0014cf-8906-4713-b02f-4671c39beb19"

@@ -3,21 +3,21 @@ const plugins = require('scripts/temp/generate-component-builder-plugins');
 import { PackageDefinition, ComponentFile } from '@sitecore-jss/sitecore-jss-dev-tools';
 
 export interface ComponentBuilderPluginConfig {
-	watch?: boolean;
-	packages: PackageDefinition[];
-	components: ComponentFile[];
+  watch?: boolean;
+  packages: PackageDefinition[];
+  components: ComponentFile[];
 }
 
 export interface ComponentBuilderPlugin {
-	/**
-	 * Detect order when the plugin should be called, e.g. 0 - will be called first (can be a plugin which data is required for other plugins)
-	 */
-	order: number;
-	/**
-	 * A function which will be called during component builder generation
-	 * @param {JssConfig} config Current (accumulated) config
-	 */
-	exec(config: ComponentBuilderPluginConfig): ComponentBuilderPluginConfig;
+  /**
+   * Detect order when the plugin should be called, e.g. 0 - will be called first (can be a plugin which data is required for other plugins)
+   */
+  order: number;
+  /**
+   * A function which will be called during component builder generation
+   * @param {JssConfig} config Current (accumulated) config
+   */
+  exec(config: ComponentBuilderPluginConfig): ComponentBuilderPluginConfig;
 }
 
 /*
@@ -37,11 +37,11 @@ export interface ComponentBuilderPlugin {
 */
 
 const defaultConfig: ComponentBuilderPluginConfig = {
-	watch: process.argv.some((arg) => arg === '--watch'),
-	packages: [],
-	components: [],
+  watch: process.argv.some((arg) => arg === '--watch'),
+  packages: [],
+  components: [],
 };
 
 (Object.values(plugins) as ComponentBuilderPlugin[])
-	.sort((p1, p2) => p1.order - p2.order)
-	.reduce((config, plugin) => plugin.exec(config), defaultConfig);
+  .sort((p1, p2) => p1.order - p2.order)
+  .reduce((config, plugin) => plugin.exec(config), defaultConfig);

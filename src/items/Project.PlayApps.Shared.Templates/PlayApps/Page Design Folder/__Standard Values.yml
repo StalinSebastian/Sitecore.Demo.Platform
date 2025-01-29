@@ -1,0 +1,19 @@
+﻿---
+ID: "4b01cf47-452a-4235-b695-68c1d8a81bab"
+Parent: "b3959aa1-8228-4fa3-af1a-90a95fa46675"
+Template: "b3959aa1-8228-4fa3-af1a-90a95fa46675"
+Path: /sitecore/templates/Project/PlayApps/Page Design Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {B3959AA1-8228-4FA3-AF1A-90A95FA46675}
+    {1105B8F8-1E00-426B-BF1F-C840742D827B}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "14b26c62-a239-4f85-8754-4e11befc2c43"

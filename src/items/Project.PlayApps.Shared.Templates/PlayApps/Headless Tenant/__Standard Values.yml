@@ -1,0 +1,13 @@
+﻿---
+ID: "2a357e85-42db-4c97-96b9-1510fe660ec8"
+Parent: "5e9a7c11-ec0f-44c0-8756-9bb3f4899a1e"
+Template: "5e9a7c11-ec0f-44c0-8756-9bb3f4899a1e"
+Path: /sitecore/templates/Project/PlayApps/Headless Tenant/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4fe7cf0e-d7ff-49c5-b46e-fd3f29c3f660"

@@ -1,0 +1,22 @@
+﻿---
+ID: "8c34cbff-6a62-4b46-b558-3abfe5ff74b9"
+Parent: "28a106ef-1da2-4ae7-bfd7-651e20c97903"
+Template: "28a106ef-1da2-4ae7-bfd7-651e20c97903"
+Path: /sitecore/templates/Project/PlayApps/Page/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {28A106EF-1DA2-4AE7-BFD7-651E20C97903}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3bf04c1b-4db8-4777-a4d1-58954216fcd4"
+    - ID: "995afab5-6576-4f0a-9ec0-418b6991b65e"
+      Hint: Title
+      Value: $name

@@ -1,0 +1,13 @@
+﻿---
+ID: "5319987a-b4db-4c63-bc78-604c00b8d86d"
+Parent: "75d147ce-54d4-454f-a2d7-2c1dd478a35d"
+Template: "75d147ce-54d4-454f-a2d7-2c1dd478a35d"
+Path: /sitecore/templates/Project/PlayApps/Headless Site/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4aab76f5-69e7-4564-a32e-79d30b6876a9"

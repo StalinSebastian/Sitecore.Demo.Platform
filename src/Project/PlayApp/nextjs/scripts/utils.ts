@@ -5,10 +5,10 @@ import chokidar from 'chokidar';
  * Run watch mode, watching on @var rootPath
  */
 export function watchItems(rootPath: string, cb: () => void): void {
-	chokidar
-		.watch(rootPath, { ignoreInitial: true, awaitWriteFinish: true })
-		.on('add', cb)
-		.on('unlink', cb);
+  chokidar
+    .watch(rootPath, { ignoreInitial: true, awaitWriteFinish: true })
+    .on('add', cb)
+    .on('unlink', cb);
 }
 
 /**
@@ -20,40 +20,40 @@ export function watchItems(rootPath: string, cb: () => void): void {
  * @returns {Item[]} items
  */
 export function getItems<Item>(settings: {
-	path: string;
-	resolveItem: (path: string, name: string) => Item;
-	cb?: (name: string) => void;
-	fileFormat?: RegExp;
+  path: string;
+  resolveItem: (path: string, name: string) => Item;
+  cb?: (name: string) => void;
+  fileFormat?: RegExp;
 }): Item[] {
-	const { path, resolveItem, cb, fileFormat = new RegExp(/(.+)(?<!\.d)\.[jt]sx?$/) } = settings;
-	const items: Item[] = [];
-	const folders: fs.Dirent[] = [];
+  const { path, resolveItem, cb, fileFormat = new RegExp(/(.+)(?<!\.d)\.[jt]sx?$/) } = settings;
+  const items: Item[] = [];
+  const folders: fs.Dirent[] = [];
 
-	if (!fs.existsSync(path)) return [];
+  if (!fs.existsSync(path)) return [];
 
-	fs.readdirSync(path, { withFileTypes: true }).forEach((item) => {
-		if (item.isDirectory()) {
-			folders.push(item);
-		}
+  fs.readdirSync(path, { withFileTypes: true }).forEach((item) => {
+    if (item.isDirectory()) {
+      folders.push(item);
+    }
 
-		if (fileFormat.test(item.name)) {
-			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-			const name = item.name.match(fileFormat)![1];
-			items.push(resolveItem(path, name));
-			if (cb) cb(name);
-		}
-	});
+    if (fileFormat.test(item.name)) {
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      const name = item.name.match(fileFormat)![1];
+      items.push(resolveItem(path, name));
+      if (cb) cb(name);
+    }
+  });
 
-	for (const folder of folders) {
-		items.push(
-			...getItems<Item>({
-				path: `${path}/${folder.name}`,
-				resolveItem,
-				cb,
-				fileFormat,
-			})
-		);
-	}
+  for (const folder of folders) {
+    items.push(
+      ...getItems<Item>({
+        path: `${path}/${folder.name}`,
+        resolveItem,
+        cb,
+        fileFormat,
+      })
+    );
+  }
 
-	return items;
+  return items;
 }

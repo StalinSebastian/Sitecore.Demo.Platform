@@ -49,3 +49,8 @@ FrontEnd/*/scripts/pre-optimized-min.js
 # Environment files
 .env
 .env.local
+
+# Next.js
+src/Project/PlayApp/nextjs/.next*/
+src/Project/PlayApp/nextjs/out/
+src/Project/PlayApp/nextjs/scjssconfig.json

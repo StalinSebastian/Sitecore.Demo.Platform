@@ -1,0 +1,13 @@
+﻿---
+ID: "a4f94eb9-ab61-47ae-8452-d8c870099909"
+Parent: "3b0e6fd1-4172-4de1-9e33-21b360bac05f"
+Template: "3b0e6fd1-4172-4de1-9e33-21b360bac05f"
+Path: /sitecore/templates/Project/PlayApps/JSS Settings/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1989b604-e738-4dd8-a26b-889f6bb29eca"

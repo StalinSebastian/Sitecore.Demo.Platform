@@ -1,0 +1,13 @@
+﻿---
+ID: "f9262881-3b08-4e9b-b012-22491eb87a08"
+Parent: "62622a14-3981-4574-a174-9289c62ba3b8"
+Template: "fb414664-6b1b-4121-8e57-57eccabe7136"
+Path: "/sitecore/content/PlayApps/Play-NextJS/Data/Video Teasers"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ef7d2dda-404f-4824-9254-200fed0fa1b6"

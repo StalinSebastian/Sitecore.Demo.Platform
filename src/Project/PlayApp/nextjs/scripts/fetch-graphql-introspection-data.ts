@@ -8,39 +8,39 @@ import { getIntrospectionQuery } from 'graphql';
 let jssConfig;
 
 try {
-	// eslint-disable-next-line
+  // eslint-disable-next-line
   jssConfig = require('../src/temp/config');
 } catch (e) {
-	console.error(
-		'Unable to require JSS config. Ensure `jss setup` has been run, and the app has been started at least once after setup.'
-	);
-	console.error(e);
-	process.exit(1);
+  console.error(
+    'Unable to require JSS config. Ensure `jss setup` has been run, and the app has been started at least once after setup.'
+  );
+  console.error(e);
+  process.exit(1);
 }
 
 console.log(`Fetch graphql introspection data from ${jssConfig.graphQLEndpoint}...`);
 
 const client = new GraphQLRequestClient(jssConfig.graphQLEndpoint, {
-	apiKey: jssConfig.sitecoreApiKey,
+  apiKey: jssConfig.sitecoreApiKey,
 });
 
 client
-	.request(getIntrospectionQuery())
-	.then((result) => {
-		fs.writeFile(
-			'./src/temp/GraphQLIntrospectionResult.json',
-			JSON.stringify(result, null, 2),
-			(err) => {
-				if (err) {
-					console.error('Error writing GraphQLIntrospectionResult file', err);
-					return;
-				}
+  .request(getIntrospectionQuery())
+  .then((result) => {
+    fs.writeFile(
+      './src/temp/GraphQLIntrospectionResult.json',
+      JSON.stringify(result, null, 2),
+      (err) => {
+        if (err) {
+          console.error('Error writing GraphQLIntrospectionResult file', err);
+          return;
+        }
 
-				console.log('GraphQL Introspection Data successfully fetched!');
-			}
-		);
-	})
-	.catch((e) => {
-		console.error(e);
-		process.exit(1);
-	});
+        console.log('GraphQL Introspection Data successfully fetched!');
+      }
+    );
+  })
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });

@@ -1,0 +1,34 @@
+{
+    "namespace": "Project.PlayApps.Shared",
+    "references": ["Foundation.*", "Feature.*"],
+    "items": {
+        "includes": [
+            {
+				"name": "Project.PlayApps.Shared.Templates",
+				"path": "/sitecore/templates/Project/PlayApps",
+				"database": "master"
+			},
+			{
+				"name": "Project.PlayApps.Shared.Renderings",
+				"path": "/sitecore/layout/Renderings/Project/PlayApps",
+				"database": "master"
+			},
+			{
+				"name": "Project.PlayApps.Shared.System.Settings",
+				"path": "/sitecore/system/Settings/Services/API Keys/PlayApp",
+				"database": "master"
+			},
+			{
+				"name": "Project.PlayApps.Shared.Media",
+				"path": "/sitecore/media library/Project/PlayApps",
+				"database": "master"
+			},
+			{
+				"name": "Project.PlayApps.Shared.Forms",
+				"path": "/sitecore/Forms/PlayApps",
+				"database": "master"
+			}
+        ]
+
+    }
+}

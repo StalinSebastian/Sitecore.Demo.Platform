@@ -1,7 +1,7 @@
 import {
-	generatePlugins,
-	ModuleType,
-	PluginDefinition,
+  generatePlugins,
+  ModuleType,
+  PluginDefinition,
 } from '@sitecore-jss/sitecore-jss-dev-tools';
 
 /*
@@ -16,49 +16,49 @@ import {
 */
 
 const pluginDefinitions: PluginDefinition[] = [
-	{
-		distPath: 'scripts/temp/generate-component-builder-plugins.ts',
-		rootPath: 'scripts/generate-component-builder/plugins',
-		moduleType: ModuleType.ESM,
-	},
-	{
-		distPath: 'scripts/temp/config-plugins.ts',
-		rootPath: 'scripts/config/plugins',
-		moduleType: ModuleType.ESM,
-	},
-	{
-		distPath: 'src/temp/sitemap-fetcher-plugins.ts',
-		rootPath: 'src/lib/sitemap-fetcher/plugins',
-		moduleType: ModuleType.ESM,
-	},
-	{
-		distPath: 'src/temp/middleware-plugins.ts',
-		rootPath: 'src/lib/middleware/plugins',
-		moduleType: ModuleType.ESM,
-	},
-	{
-		distPath: 'src/temp/page-props-factory-plugins.ts',
-		rootPath: 'src/lib/page-props-factory/plugins',
-		moduleType: ModuleType.ESM,
-	},
-	{
-		distPath: 'src/temp/next-config-plugins.js',
-		rootPath: 'src/lib/next-config/plugins',
-		moduleType: ModuleType.CJS,
-		relative: true,
-	},
-	{
-		distPath: 'src/temp/extract-path-plugins.ts',
-		rootPath: 'src/lib/extract-path/plugins',
-		moduleType: ModuleType.ESM,
-	},
-	{
-		distPath: 'src/temp/site-resolver-plugins.ts',
-		rootPath: 'src/lib/site-resolver/plugins',
-		moduleType: ModuleType.ESM,
-	},
+  {
+    distPath: 'scripts/temp/generate-component-builder-plugins.ts',
+    rootPath: 'scripts/generate-component-builder/plugins',
+    moduleType: ModuleType.ESM,
+  },
+  {
+    distPath: 'scripts/temp/config-plugins.ts',
+    rootPath: 'scripts/config/plugins',
+    moduleType: ModuleType.ESM,
+  },
+  {
+    distPath: 'src/temp/sitemap-fetcher-plugins.ts',
+    rootPath: 'src/lib/sitemap-fetcher/plugins',
+    moduleType: ModuleType.ESM,
+  },
+  {
+    distPath: 'src/temp/middleware-plugins.ts',
+    rootPath: 'src/lib/middleware/plugins',
+    moduleType: ModuleType.ESM,
+  },
+  {
+    distPath: 'src/temp/page-props-factory-plugins.ts',
+    rootPath: 'src/lib/page-props-factory/plugins',
+    moduleType: ModuleType.ESM,
+  },
+  {
+    distPath: 'src/temp/next-config-plugins.js',
+    rootPath: 'src/lib/next-config/plugins',
+    moduleType: ModuleType.CJS,
+    relative: true,
+  },
+  {
+    distPath: 'src/temp/extract-path-plugins.ts',
+    rootPath: 'src/lib/extract-path/plugins',
+    moduleType: ModuleType.ESM,
+  },
+  {
+    distPath: 'src/temp/site-resolver-plugins.ts',
+    rootPath: 'src/lib/site-resolver/plugins',
+    moduleType: ModuleType.ESM,
+  },
 ];
 
 pluginDefinitions.forEach((definition) => {
-	generatePlugins(definition);
+  generatePlugins(definition);
 });

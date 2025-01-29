@@ -1,0 +1,18 @@
+﻿---
+ID: "f245a785-969a-4003-b65a-7c08810b4635"
+Parent: "28932fce-a274-41ea-8b6e-237252953732"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: "/sitecore/content/PlayApps/Play-NextJS/Home/Data"
+BranchID: "bf982a12-b7d1-46d0-b750-cb3bc8f89988"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{A294864A-F47F-4FCF-AF99-5B2574BF6034}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c3b7c7c0-050f-4808-a2a4-578f89ccaecc"

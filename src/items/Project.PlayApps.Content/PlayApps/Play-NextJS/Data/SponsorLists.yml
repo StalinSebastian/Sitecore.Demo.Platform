@@ -1,0 +1,13 @@
+﻿---
+ID: "f2f1ed58-b8f0-475b-b352-36b6c575ddf1"
+Parent: "62622a14-3981-4574-a174-9289c62ba3b8"
+Template: "32a2995f-269b-4ada-95ba-ce7925bfb15c"
+Path: "/sitecore/content/PlayApps/Play-NextJS/Data/SponsorLists"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d347cee5-a9bb-4ed7-b200-413c84b22298"

@@ -2,10 +2,10 @@ import { Text, RichText, Field, withDatasourceCheck } from '@sitecore-jss/siteco
 import { ComponentProps } from 'lib/component-props';
 
 type ContentBlockProps = ComponentProps & {
-	fields: {
-		heading: Field<string>;
-		content: Field<string>;
-	};
+  fields: {
+    heading: Field<string>;
+    content: Field<string>;
+  };
 };
 
 /**
@@ -14,11 +14,11 @@ type ContentBlockProps = ComponentProps & {
  * JSS component that's useful.
  */
 const ContentBlock = ({ fields }: ContentBlockProps): JSX.Element => (
-	<div className="contentBlock">
-		<Text tag="h2" className="contentTitle" field={fields.heading} />
+  <div className="contentBlock">
+    <Text tag="h2" className="contentTitle" field={fields.heading} />
 
-		<RichText className="contentDescription" field={fields.content} />
-	</div>
+    <RichText className="contentDescription" field={fields.content} />
+  </div>
 );
 
 export default withDatasourceCheck()<ContentBlockProps>(ContentBlock);

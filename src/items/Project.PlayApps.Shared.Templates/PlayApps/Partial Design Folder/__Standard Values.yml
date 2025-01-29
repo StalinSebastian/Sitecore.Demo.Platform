@@ -1,0 +1,19 @@
+﻿---
+ID: "2bf1c3c6-91b3-4c96-a1f9-993ebece2ae9"
+Parent: "51dc6064-5841-4c2c-bebe-3aef5e056e6d"
+Template: "51dc6064-5841-4c2c-bebe-3aef5e056e6d"
+Path: /sitecore/templates/Project/PlayApps/Partial Design Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {51DC6064-5841-4C2C-BEBE-3AEF5E056E6D}
+    {FD2059FD-6043-4DFE-8C04-E2437CE87634}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fded94d5-7a1a-4b1d-a9aa-3363600fcd2c"

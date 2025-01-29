@@ -10,12 +10,12 @@ import { EditingDataMiddleware } from '@sitecore-jss/sitecore-jss-nextjs/editing
 // Bump body size limit (1mb by default) and disable response limit for Sitecore editor payloads
 // See https://nextjs.org/docs/api-routes/request-helpers#custom-config
 export const config = {
-	api: {
-		bodyParser: {
-			sizeLimit: '2mb',
-		},
-		responseLimit: false,
-	},
+  api: {
+    bodyParser: {
+      sizeLimit: '2mb',
+    },
+    responseLimit: false,
+  },
 };
 
 // Wire up the EditingDataMiddleware handler

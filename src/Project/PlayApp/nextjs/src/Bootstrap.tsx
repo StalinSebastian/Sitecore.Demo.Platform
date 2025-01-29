@@ -6,7 +6,7 @@ import { SitecorePageProps } from 'lib/page-props';
  * that needs to happen early in the application's lifecycle.
  */
 const Bootstrap = (_props: SitecorePageProps): JSX.Element | null => {
-	return null;
+  return null;
 };
 
 export default Bootstrap;

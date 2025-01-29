@@ -7,15 +7,15 @@ import { ConfigPlugin } from '..';
  * based on other config settings.
  */
 class ComputedPlugin implements ConfigPlugin {
-	// should come after other plugins (but before fallback)
-	order = 10;
+  // should come after other plugins (but before fallback)
+  order = 10;
 
-	async exec(config: JssConfig) {
-		return Object.assign({}, config, {
-			graphQLEndpoint:
-				config.graphQLEndpoint || `${config.sitecoreApiHost}${config.graphQLEndpointPath}`,
-		});
-	}
+  async exec(config: JssConfig) {
+    return Object.assign({}, config, {
+      graphQLEndpoint:
+        config.graphQLEndpoint || `${config.sitecoreApiHost}${config.graphQLEndpointPath}`,
+    });
+  }
 }
 
 export const computedPlugin = new ComputedPlugin();

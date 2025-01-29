@@ -1,0 +1,18 @@
+﻿---
+ID: "ad5fb115-822a-45e2-b62d-37f6881fa1be"
+Parent: "b15db87c-43dc-4a8e-98e7-f0148e982928"
+Template: "c2dc4690-af44-48c7-bb21-90d1ad246732"
+Path: "/sitecore/content/PlayApps/Play-NextJS/Settings/Redirects"
+BranchID: "50213d5e-83f8-4fa7-a91d-825e61c7b8a2"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{DC338247-8B52-4159-8095-88F00E323E2D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "922a1a61-3ce7-481c-b05d-27646334b826"

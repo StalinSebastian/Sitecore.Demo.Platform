@@ -1,0 +1,14 @@
+{
+    "namespace": "Project.PlayApps.Content",
+    "references": ["Foundation.*", "Feature.*", "Project.PlayApps.Shared.*"],
+    "items": {
+        "includes": [
+            {
+                "name": "Project.PlayApps.Content",
+                "path": "/sitecore/content/PlayApps",
+                "database": "master"
+            }
+        ]
+
+    }
+}
