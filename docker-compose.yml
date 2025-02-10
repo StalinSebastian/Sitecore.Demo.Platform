@@ -182,3 +182,33 @@ services:
     healthcheck:
       test: ["CMD", "powershell", "-command", "C:/Healthchecks/Healthcheck.ps1 -Port 8080"]
       timeout: 300s
+
+  nodejs:
+    image: ${REGISTRY}demo/lighthouse-nodejs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    build:
+      context: ./docker/images/windows/demo-nodejs
+      args:
+        PARENT_IMAGE: ${NODEJS_PARENT_IMAGE}
+        NODEJS_VERSION: ${NODEJS_VERSION}
+    deploy:
+      replicas: 0
+
+  playapp-nextjs:
+    image: ${REGISTRY}demo/lighthouse-playapp-nextjs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    build:
+      context: ./docker/images/windows/demo-playapp-nextjs
+      args:
+        PARENT_IMAGE: ${REGISTRY}demo/lighthouse-nodejs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    depends_on:
+      - cm
+      - nodejs
+
+  playapp-angular:
+    image: ${REGISTRY}demo/lighthouse-playapp-angular:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    build:
+      context: ./docker/images/windows/demo-playapp-angularjs
+      args:
+        PARENT_IMAGE: ${REGISTRY}demo/lighthouse-nodejs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    depends_on:
+      - cm
+      - nodejs

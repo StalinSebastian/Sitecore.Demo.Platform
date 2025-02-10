@@ -242,21 +242,23 @@ services:
     deploy:
       replicas: 0
 
-  playapp-nodejs:
-    image: ${REGISTRY}demo/lighthouse-playapp-nodejs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+  playapp-nextjs:
+    image: ${REGISTRY}demo/lighthouse-playapp-nextjs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
     build:
-      context: ./docker/images/windows/demo-playapp
+      context: ./docker/images/windows/demo-playapp-nextjs
       target: debug
       args:
         PARENT_IMAGE: ${REGISTRY}demo/lighthouse-nodejs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    ports:
+      - 3000:3000
     volumes:
       - .\src\Project\PlayApp\nextjs:C:\app
     environment:
       SITECORE_API_HOST: "http://cm"
-      NEXTJS_DIST_DIR: ".next"
       PUBLIC_URL: "https://${NextJS_RENDERING_HOST}"
       JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
       SITECORE_API_KEY: "${SITECORE_API_KEY}"
+      SITECORE_SITE_NAME: "Play-NextJS"
       FETCH_WITH: "REST"
       NODE_ENV: ${NODE_ENV}
     depends_on:
@@ -264,9 +266,9 @@ services:
       - nodejs
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.playapp-nodejs-secure.entrypoints=websecure"
-      - "traefik.http.routers.playapp-nodejs-secure.rule=Host(`${NextJS_RENDERING_HOST}`)"
-      - "traefik.http.routers.playapp-nodejs-secure.tls=true"
+      - "traefik.http.routers.playapp-nextjs-secure.entrypoints=websecure"
+      - "traefik.http.routers.playapp-nextjs-secure.rule=Host(`${NextJS_RENDERING_HOST}`)"
+      - "traefik.http.routers.playapp-nextjs-secure.tls=true"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3000/api/healthz"]
       interval: 60s
@@ -274,6 +276,41 @@ services:
     networks:
       - demo
 
+  playapp-angular:
+    image: ${REGISTRY}demo/lighthouse-playapp-angular:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    build:
+      context: ./docker/images/windows/demo-playapp-angularjs
+      target: debug
+      args:
+        PARENT_IMAGE: ${REGISTRY}demo/lighthouse-nodejs:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${DEMO_VERSION}
+    ports:
+      - 3003:3003  # Your Angular app
+      - 9229:9229  # Node Inspector
+    volumes:
+      - .\src\Project\PlayApp\angular:C:\app
+    environment:
+      #SITECORE_API_HOST: "http://cm"
+      PUBLIC_URL: "https://${Angular_RENDERING_HOST}"
+      JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
+      SITECORE_API_KEY: "${SITECORE_API_KEY}"
+      SITECORE_SITE_NAME: "Play-AngularJS"
+      FETCH_WITH: "REST"
+      NODE_ENV: ${NODE_ENV}
+    depends_on:
+      - cm
+      - nodejs
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.playapp-angular-secure.entrypoints=websecure"
+      - "traefik.http.routers.playapp-angular-secure.rule=Host(`${Angular_RENDERING_HOST}`)"
+      - "traefik.http.routers.playapp-angular-secure.tls=true"
+      #- "traefik.http.services.playapp-angular-secure.loadbalancer.server.port=3003"
+    healthcheck:
+      #test: ["CMD", "curl", "-f", "http://localhost:3000/api/healthz"]
+      interval: 60s
+      timeout: 30s
+    networks:
+      - demo
 
 networks:
   demo:
