@@ -1,0 +1,17 @@
+﻿---
+ID: "938831a8-b03b-4b4a-bab7-377c07f092d6"
+Parent: "919a71bc-07e6-436d-a708-4305555f2c21"
+Template: "c14b6289-8ac2-439c-9e5b-40de9f820c3f"
+Path: /sitecore/content/PlaySites/PlaySxa/Home/About/Redirect
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "22753447-be25-4035-a3c9-7f875afe8e57"
+      Hint: RedirectUrl
+      Value: |
+        <link linktype="external" url="http://www.google.com" anchor="" target="" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5964589d-ca7b-42c9-a569-38f29ce70e65"

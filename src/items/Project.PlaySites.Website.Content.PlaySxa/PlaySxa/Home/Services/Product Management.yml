@@ -1,0 +1,33 @@
+﻿---
+ID: "4015c52f-b011-4f8e-bab2-7df1b280f4c0"
+Parent: "cfd3c21b-d78e-487b-8fe3-8e314445c179"
+Template: "9f8c30df-9f3c-4d48-a9f7-e3b493d3307f"
+Path: /sitecore/content/PlaySites/PlaySxa/Home/Services/Product Management
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "4735f8a7-07a3-4ade-a935-a07b415afac6"
+      Hint: Teaser Headline
+      Value: Product Management
+    - ID: "556b7f8d-88af-484b-ac0b-6daf0024a8de"
+      Hint: Teaser Image
+      Value: |
+        <image mediaid="{86D9BE75-7F2B-4094-9C65-E14F5BD37061}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cc5a6551-0d71-4af8-b49a-f0f1d79ba83e"
+    - ID: "a519d4c5-65f1-4652-8531-bd0f5e75071d"
+      Hint: Teaser Description
+      Value: Product Management description
+    - ID: "faa81e4b-e0b7-4f5a-b376-7ebe017f5ad8"
+      Hint: Title
+      Value: Product Management

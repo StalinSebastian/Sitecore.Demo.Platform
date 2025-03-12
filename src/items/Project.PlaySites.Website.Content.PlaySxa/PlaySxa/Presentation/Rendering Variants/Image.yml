@@ -1,0 +1,24 @@
+﻿---
+ID: "8fb4798c-3916-44fd-9fc0-de0d08b53a9a"
+Parent: "da8d33e1-4ead-417c-b0ee-5583f2d12469"
+Template: "e1a3b30c-77bc-4f6c-a008-d01b3371235d"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/Image
+BranchID: "cc5f46b4-6376-48b6-ad03-adc13508527f"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/photo_landscape.png
+- ID: "087c0553-9162-41f5-98d3-87eb0d80edbb"
+  Hint: Compatible Renderings
+  Value: "{69D0A00E-FF06-4B17-BE59-BED330577680}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{043C849E-89F9-4F5C-A336-066D5B15754F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1de05231-7a9d-496e-aaac-cb06d3da898f"

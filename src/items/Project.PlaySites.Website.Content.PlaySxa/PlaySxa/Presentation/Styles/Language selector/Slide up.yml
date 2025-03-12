@@ -1,0 +1,24 @@
+﻿---
+ID: "b1c1bd65-4820-43d4-98c5-aa02d54d7b0c"
+Parent: "e5519b2e-4bbb-48f4-a242-0478c8530c00"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Styles/Language selector/Slide up
+BranchID: "5edf676a-2fdd-418a-8c56-cb465ee16e20"
+SharedFields:
+- ID: "09147fb2-ebfb-4949-8c8e-26a424409d5e"
+  Hint: Value
+  Value: "language-selector-item-container-slideup"
+- ID: "69bb49f3-da64-4b0e-abd6-184b832ff6ab"
+  Hint: Allowed Renderings
+  Value: "{0F77C4A9-0727-4FE2-8E22-511A565B9959}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{E9364F3F-0638-4D08-BCCF-BF74F038B033}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "723d9fa8-012b-48b2-8b85-6f741f724dbb"

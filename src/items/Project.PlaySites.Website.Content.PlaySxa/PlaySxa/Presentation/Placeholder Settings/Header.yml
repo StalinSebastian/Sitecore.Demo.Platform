@@ -1,0 +1,20 @@
+﻿---
+ID: "339def49-8700-41b3-84a6-82c2ee5fc5e3"
+Parent: "6fd9f1fb-b433-4369-92d5-bd13b615ddb6"
+Template: "1ca0304b-e5b6-4810-8211-54426f1752c2"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Placeholder Settings/Header
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: Header
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: "{69D0A00E-FF06-4B17-BE59-BED330577680}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9a9f52f8-e62d-4925-a8ad-289b1cd6992a"

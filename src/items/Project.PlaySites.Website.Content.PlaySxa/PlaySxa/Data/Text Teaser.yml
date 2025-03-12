@@ -1,0 +1,13 @@
+﻿---
+ID: "f9e87e2f-8fe7-4f52-9260-ebaf795ea1e2"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "fc59bb60-6974-4a0a-be0e-45042cada735"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Text Teaser
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b0af321a-f3c1-4d87-8e4d-a5380cce0fc2"

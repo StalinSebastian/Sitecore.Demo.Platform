@@ -1,0 +1,13 @@
+﻿---
+ID: "43d9b669-ead7-416d-a029-07400a899ba3"
+Parent: "08788c53-39e5-4d19-b6fe-7e795f13fe33"
+Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Promos/Promo
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7d99c9cf-50e8-4b56-9360-54df4cdc111f"

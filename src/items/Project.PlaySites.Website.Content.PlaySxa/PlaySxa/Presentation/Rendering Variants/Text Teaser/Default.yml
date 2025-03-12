@@ -1,0 +1,21 @@
+﻿---
+ID: "f1305cfe-73be-47d1-a5fa-8640a521d00c"
+Parent: "4dae828b-f879-48e3-bb9a-ee9fab187bf9"
+Template: "fb3e3034-33f8-4ce8-be98-dd05010f4c22"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/Text Teaser/Default
+BranchID: "c145fdcb-eb11-4feb-88f4-303383c6c4c6"
+SharedFields:
+- ID: "e1d5adba-8348-4127-9bb6-455936653839"
+  Hint: CssClass
+  Value: "text-teaser"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{4765D530-4DBE-4FF8-8BAC-B66A8F9B37B1}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b06c89e1-054c-445e-949b-4a67b78d1285"

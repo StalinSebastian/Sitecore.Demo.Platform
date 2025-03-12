@@ -1,0 +1,20 @@
+﻿---
+ID: "28b44f14-9157-4a5a-9977-f7a3b3996a3e"
+Parent: "a12ee909-e250-4427-913e-83692d40d982"
+Template: "292ccfcd-7790-4692-856b-76014b8038e7"
+Path: /sitecore/system/Settings/Feature/PlaySites/Text Teaser/Text Teaser Site Setup
+SharedFields:
+- ID: "40deee2f-7595-40bd-b2c9-51f9e2346100"
+  Hint: Dependencies
+  Value: "{BDF83718-907A-435B-B1BA-64139E07983F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f49018d9-275a-4c07-a5a4-c6ac68d7e917"
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Text Teaser

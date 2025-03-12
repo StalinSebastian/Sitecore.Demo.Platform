@@ -1,0 +1,13 @@
+﻿---
+ID: "259ae85c-b187-4ec5-9b74-73b2b837862b"
+Parent: "28b44f14-9157-4a5a-9977-f7a3b3996a3e"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Settings/Feature/PlaySites/Text Teaser/Text Teaser Site Setup/Rendering Variants
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8169bbf2-021d-4335-bac7-2dd7790650b0"

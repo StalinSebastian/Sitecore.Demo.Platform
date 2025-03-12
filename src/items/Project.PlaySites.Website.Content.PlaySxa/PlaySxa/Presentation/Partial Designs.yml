@@ -1,0 +1,18 @@
+﻿---
+ID: "c5f3aa16-bd77-4170-a210-7475c808f01b"
+Parent: "9c51632d-2dbb-4a94-9dd4-ccebe7798653"
+Template: "2e54e0fb-dfa9-4d86-a861-682f0cc6de50"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Partial Designs
+BranchID: "b90549b5-c997-4d6b-b102-c9ab82528974"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{1DA4DAC3-7948-407B-A30D-D369913CF4F9}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9e0d2f75-0c2e-4829-8a6b-30f7a5cbb460"

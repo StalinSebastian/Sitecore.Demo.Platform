@@ -1,0 +1,41 @@
+﻿---
+ID: "ec143dda-3110-4945-a1a4-314ea79b9406"
+Parent: "5a06ab94-821d-41d3-a7ab-41cfe4a6f6ab"
+Template: "82a67e6c-8640-4183-9b99-21a1eb2c3337"
+Path: /sitecore/content/PlaySites/PlaySxa/Settings
+BranchID: "b90549b5-c997-4d6b-b102-c9ab82528974"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {11F57D7B-CBB2-4647-B98C-71457564BA4F}
+    {E7F93DDC-E6FD-4A17-BF3C-959C82D6FB8D}
+    {C2DC4690-AF44-48C7-BB21-90D1AD246732}
+- ID: "ad84cc6b-32ef-49d8-9326-916976cb2520"
+  Hint: Grid Mapping
+  Value: "%7bFE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3%7d%3d%257B2472CEE0-FBB4-474B-8D1C-D8517199CC08%257D"
+- ID: "af332c24-fe17-41e7-8caf-8e64c588fe72"
+  Hint: EditingTheme
+  Value: "{14312806-2CD8-4990-86DD-775F1BE34829}"
+- ID: "beeede03-ab13-4558-96f9-c3e8957b46f8"
+  Hint: Themes
+  Value: |
+    {480C6168-3E9E-48CD-911E-E9AB517AE286}
+    {E99B315F-8C89-4419-A84F-BE1005EF2DDC}
+- ID: "e81e1f9e-8b87-495b-9cb7-84a2a23133be"
+  Hint: MediaLibrary
+  Value: "{C763399A-0219-4A52-89F0-71B6DD977938}"
+- ID: "e8881464-38af-4655-be4a-ee10586578a2"
+  Hint: Templates
+  Value: "{6183B9CA-4872-41EF-8EAC-D1B8A73463CD}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{3E739E69-859C-4694-8D14-2BA6CA779CC6}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "41fc8bd2-14d2-4009-9a34-52d86179c57a"

@@ -1,0 +1,13 @@
+﻿---
+ID: "3bde349d-df31-437d-afce-299e4414902e"
+Parent: "0cce2a3c-7564-4b47-aad3-172a21f75bf3"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Settings/Feature/PlaySites/Services/Services Site Setup/Rendering Variants
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2df5e4b5-8def-4319-9edd-3b1d515d1dd2"

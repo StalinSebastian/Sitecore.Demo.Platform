@@ -1,0 +1,13 @@
+﻿---
+ID: "b04aa3ad-72b7-4dc6-8e7a-2a2c38b7df6a"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "9c2d0fdf-4daf-4494-bde7-f857f1924825"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Navigation Filters
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "293741c7-2af6-4c84-8077-5e3ac7ab7c78"

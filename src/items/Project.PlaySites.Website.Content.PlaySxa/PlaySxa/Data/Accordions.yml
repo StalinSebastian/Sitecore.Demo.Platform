@@ -1,0 +1,13 @@
+﻿---
+ID: "ede45881-49a8-4058-83cc-d22ca8996f8e"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "68c00cb0-320b-4324-903a-f6ad56a2a105"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Accordions
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "193a2b5c-9a2a-4fb7-9ab7-eed3490d68f7"

@@ -1,0 +1,27 @@
+﻿---
+ID: "69cdb10a-ab47-40a6-8650-e8a34feead85"
+Parent: "5470f0cf-9f7e-4e25-9df8-79465bdea7f3"
+Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/Image/Default/ImageCaption
+BranchID: "cc5f46b4-6376-48b6-ad03-adc13508527f"
+SharedFields:
+- ID: "4753764c-c05a-4623-841b-97f85135241c"
+  Hint: FieldName
+  Value: ImageCaption
+- ID: "7495124d-09b5-4cb3-b4a6-fe77a95827da"
+  Hint: CssClass
+  Value: "image-caption"
+- ID: "db805bdc-8eec-4238-b174-2427b6f1f077"
+  Hint: Tag
+  Value: "{E8E2C26D-2F96-4A9C-9C17-D095E6CE46CC}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F0CC2337-A002-4B2C-814D-E5CC29792E9D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4db54bcf-3746-4280-865f-9fcb08c58743"

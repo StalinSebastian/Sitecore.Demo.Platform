@@ -1,0 +1,17 @@
+﻿---
+ID: "4765d530-4dbe-4ff8-8bac-b66a8f9b37b1"
+Parent: "13791c94-1e4b-410f-97cb-f5f4a1bcb968"
+Template: "fb3e3034-33f8-4ce8-be98-dd05010f4c22"
+Path: /sitecore/templates/Branches/Feature/PlaySites/Text Teaser/Default Text Teaser Variant/$name/Default
+SharedFields:
+- ID: "e1d5adba-8348-4127-9bb6-455936653839"
+  Hint: CssClass
+  Value: "text-teaser"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "30e9b629-cf69-44e0-8d35-6cafd25db915"

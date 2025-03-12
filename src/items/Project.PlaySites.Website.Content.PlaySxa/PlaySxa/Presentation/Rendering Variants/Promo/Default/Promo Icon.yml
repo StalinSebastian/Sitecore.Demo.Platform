@@ -1,0 +1,21 @@
+﻿---
+ID: "d721cf43-2fdc-47ef-af94-03a4a134b215"
+Parent: "ca182f44-586a-4ef2-8bfe-411fb6984db8"
+Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/Promo/Default/Promo Icon
+BranchID: "a19fc87d-262d-42cf-b595-41b4262733f4"
+SharedFields:
+- ID: "4753764c-c05a-4623-841b-97f85135241c"
+  Hint: FieldName
+  Value: PromoIcon
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{D1BFE2BA-5266-4FD8-A81A-2780952050E4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f2959f30-1ba5-4d7c-b89a-07c1559c92a4"

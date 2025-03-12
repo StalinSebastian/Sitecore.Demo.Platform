@@ -1,0 +1,13 @@
+﻿---
+ID: "30915f2d-be3e-4d55-bc71-7cf156dbce43"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "89895ed9-f3bb-4296-a9b7-c87b7770cdd3"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Pagination
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5ba0e617-352d-4067-8b63-7f330e41c57d"

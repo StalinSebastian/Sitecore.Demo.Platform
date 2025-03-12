@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/* breakpoints */
+.toggle details[open] summary:before {
+  content: "";
+}
+
+.toggle summary {
+  list-style: none;
+}
+
+.toggle summary.toggle-header {
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 0 10px;
+  background: #FFFFFF;
+  cursor: pointer;
+  min-height: 25px;
+}
+
+.toggle summary.toggle-header::-webkit-details-marker {
+  display: none;
+}
+
+.toggle summary.toggle-header:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  position: absolute;
+  font-size: 17px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle summary.toggle-header.show {
+  display: inline-block !important;
+}
+
+.toggle summary.toggle-header .toggle-label {
+  display: block;
+  margin: 0 0 0 10px;
+}
+
+.toggle summary.toggle-header .toggle-label p {
+  margin-bottom: 0;
+}
+
+.toggle .show {
+  color: #878787;
+}
+
+.toggle .toggle-content {
+  margin-top: -1px;
+}
+
+.toggle details summary ~ .component > .component-content {
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  display: none;
+}
+
+.toggle details[open] summary ~ .component {
+  overflow: hidden;
+}
+
+.toggle details[open] summary ~ .component > .component-content {
+  transform: translateY(-100%);
+  display: block;
+}
+
+@keyframes swing {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes easeInOutBack {
+  0% {
+    transform: translateY(-100%);
+  }
+  20% {
+    transform: translateY(-40%);
+  }
+  30% {
+    transform: translateY(-60%);
+  }
+  60% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(40%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes easeInOutBounce {
+  0% {
+    transform: translateY(-100%);
+  }
+  25% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  62.5% {
+    transform: translateY(-10%);
+  }
+  75% {
+    transform: translateY(0%);
+  }
+  87.5% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes easeInOutCirc {
+  0% {
+    transform: translateY(-100%);
+  }
+  10% {
+    transform: translateY(-80%);
+  }
+  90% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes easeInOutCubic {
+  0% {
+    transform: translateY(-100%);
+  }
+  30% {
+    transform: translateY(-80%);
+  }
+  70% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes easeInOutElastic {
+  0% {
+    transform: translateY(-100%);
+  }
+  30% {
+    transform: translateY(-80%);
+  }
+  70% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes easeInOutExpo {
+  0% {
+    transform: translateY(-100%);
+  }
+  30% {
+    transform: translateY(-90%);
+  }
+  70% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes easeInOutQad {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes easeInOutQuart {
+  0% {
+    transform: translateY(-100%);
+  }
+  30% {
+    transform: translateY(-90%);
+  }
+  70% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes easeInOutQuint {
+  0% {
+    transform: translateY(-100%);
+  }
+  30% {
+    transform: translateY(-90%);
+  }
+  70% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes easeInOutSine {
+  0% {
+    transform: translateY(-100%);
+  }
+  25% {
+    transform: translateY(-80%);
+  }
+  75% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes outQuad {
+  0% {
+    transform: translateY(-100%);
+  }
+  25% {
+    transform: translateY(-70%);
+  }
+  50% {
+    transform: translateY(-40%);
+  }
+  75% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

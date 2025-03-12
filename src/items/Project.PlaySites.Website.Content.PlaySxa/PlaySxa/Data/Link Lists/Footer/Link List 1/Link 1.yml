@@ -1,0 +1,28 @@
+﻿---
+ID: "63841c1a-bc5a-4923-8897-fc600e82a149"
+Parent: "b1d4fe93-7f1f-4cf9-84b4-814e09575a2f"
+Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Link Lists/Footer/Link List 1/Link 1
+BranchID: "6fe30845-72fc-4a2b-93e8-64b8eaff3152"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{194F150F-8626-4AEC-80C0-8F2529826D30}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6aa4ed93-49ab-4859-b579-d077f7dea97a"
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link linktype="internal" anchor="/" querystring="" target="" id="{167DDAA3-C212-4229-BE16-C4E1421E315D}" />

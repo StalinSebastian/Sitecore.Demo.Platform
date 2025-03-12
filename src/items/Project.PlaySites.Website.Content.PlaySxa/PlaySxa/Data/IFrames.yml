@@ -1,0 +1,13 @@
+﻿---
+ID: "99071f67-c435-43aa-83ea-89df8274ee91"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "ed1b1ba7-4267-466f-a57a-8d96d2cb979d"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/IFrames
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "20d28b47-1242-4693-a757-4873cfc6c6b5"

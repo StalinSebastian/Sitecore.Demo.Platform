@@ -1,0 +1,21 @@
+﻿---
+ID: "b1debc71-4870-430a-9775-fd5b6a6a247b"
+Parent: "ec143dda-3110-4945-a1a4-314ea79b9406"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/PlaySites/PlaySxa/Settings/Default links
+BranchID: "26ae263a-97d7-4156-97e2-4b515a45b2ea"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/graph_connection_directed.png
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{E690DD5D-6BD8-483E-9E3B-511E05D11C1E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "74685cd2-6335-4b32-87b4-0774296e7881"

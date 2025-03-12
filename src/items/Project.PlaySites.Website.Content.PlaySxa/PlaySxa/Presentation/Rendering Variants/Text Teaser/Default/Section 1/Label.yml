@@ -1,0 +1,27 @@
+﻿---
+ID: "fb292d1a-5f77-4aac-9693-370d2d0309d9"
+Parent: "1265db42-76e8-46a4-a66f-b9c6f4be33d0"
+Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/Text Teaser/Default/Section 1/Label
+BranchID: "c145fdcb-eb11-4feb-88f4-303383c6c4c6"
+SharedFields:
+- ID: "4753764c-c05a-4623-841b-97f85135241c"
+  Hint: FieldName
+  Value: Label
+- ID: "7495124d-09b5-4cb3-b4a6-fe77a95827da"
+  Hint: CssClass
+  Value: "col-12"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{BD5FEDC0-E447-4BE3-B870-6AA31DDC438D}"
+- ID: "fe56eae5-d6a1-4703-92f7-4862da6deac8"
+  Hint: RenderIfEmpty
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d718af1e-bd0c-4672-8a55-fa56df6cfb25"

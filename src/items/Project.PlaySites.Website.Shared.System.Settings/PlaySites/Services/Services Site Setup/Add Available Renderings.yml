@@ -1,0 +1,23 @@
+﻿---
+ID: "fb4a4b8d-ddd7-4f4b-a935-fb7343dc8a4f"
+Parent: "0cce2a3c-7564-4b47-aad3-172a21f75bf3"
+Template: "ea8a3f26-9ccd-443a-95f5-71b868a94bd0"
+Path: /sitecore/system/Settings/Feature/PlaySites/Services/Services Site Setup/Add Available Renderings
+SharedFields:
+- ID: "4795a7c6-08a9-4248-86c3-d460062c3a22"
+  Hint: Location
+  Value: "{84179507-91A2-47EA-A424-9D338F64C953}"
+- ID: "7868e6bc-525c-4fce-ab8a-77da3e09b171"
+  Hint: Name
+  Value: Services
+- ID: "e62c28f0-9d3b-46e2-8bec-a5e120542499"
+  Hint: Template
+  Value: "{FEAEEBB8-6BAE-43DF-83E1-8281D751D2F2}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5687e1d9-6994-45b0-9829-ef48b2d9b3cf"

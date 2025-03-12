@@ -1,0 +1,30 @@
+﻿---
+ID: "7e79793f-5071-40b9-b623-0f02e06bfe4a"
+Parent: "2ac2be32-b760-425e-8be8-5d80bd6cd12d"
+Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/Services/Default/ServicesHeadline
+BranchID: "931354e3-197f-4a15-9516-7df4ed0b8719"
+SharedFields:
+- ID: "4753764c-c05a-4623-841b-97f85135241c"
+  Hint: FieldName
+  Value: ServicesHeadline
+- ID: "7495124d-09b5-4cb3-b4a6-fe77a95827da"
+  Hint: CssClass
+  Value: "text-center"
+- ID: "db805bdc-8eec-4238-b174-2427b6f1f077"
+  Hint: Tag
+  Value: "{7FF0B09B-8AAA-469B-8A56-4743E61705EC}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{51DAFAAE-5852-4698-AED1-3E55F37ABEA4}"
+- ID: "fe56eae5-d6a1-4703-92f7-4862da6deac8"
+  Hint: RenderIfEmpty
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "736099a9-d917-457b-b86b-aa556bf980a0"

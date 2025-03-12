@@ -38,8 +38,7 @@
         "fieldId": "{52807595-0F8F-4B20-8D2A-CB71D28C6103}",
         "description": "__Owner"
       }
-    ],
-    "progressiveMetadataPull": false
+    ]
   },
   "settings": {
     "telemetryEnabled": true,

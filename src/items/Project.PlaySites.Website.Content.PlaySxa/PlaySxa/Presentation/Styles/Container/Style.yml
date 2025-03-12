@@ -1,0 +1,17 @@
+﻿---
+ID: "93c39f56-ce8e-4f93-8f00-0d7c5b1d0db1"
+Parent: "5432e900-da71-4723-b59b-c53e4831e422"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Styles/Container/Style
+SharedFields:
+- ID: "09147fb2-ebfb-4949-8c8e-26a424409d5e"
+  Hint: Value
+  Value: Style
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "89d91b40-6f1c-4d97-a8bb-cb3813e5184f"

@@ -1,0 +1,23 @@
+﻿---
+ID: "12093315-7ace-4851-bdf1-bedd2191e72b"
+Parent: "be4b725e-a793-4946-9d61-337f7922d257"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/PlaySites/Pages/Services Overview Page
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/window_star.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{8773AC09-23DB-42D1-8E18-9841E80FBD23}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 350
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "856d35e2-f64f-422b-aab9-f5b7a31ef283"

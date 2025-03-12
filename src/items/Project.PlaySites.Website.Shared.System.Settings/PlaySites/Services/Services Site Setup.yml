@@ -1,0 +1,20 @@
+﻿---
+ID: "0cce2a3c-7564-4b47-aad3-172a21f75bf3"
+Parent: "5776161a-5606-452c-a276-1b6a7e2d449e"
+Template: "292ccfcd-7790-4692-856b-76014b8038e7"
+Path: /sitecore/system/Settings/Feature/PlaySites/Services/Services Site Setup
+SharedFields:
+- ID: "40deee2f-7595-40bd-b2c9-51f9e2346100"
+  Hint: Dependencies
+  Value: "{BDF83718-907A-435B-B1BA-64139E07983F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2d477585-e301-4b47-a474-1de7a8a0bd78"
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Services

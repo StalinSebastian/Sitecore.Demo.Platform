@@ -1,0 +1,13 @@
+﻿---
+ID: "2dd29312-9b26-4387-8068-f583ae6b952a"
+Parent: "85972eaa-7413-431c-b479-f0ce2fd7e4fb"
+Template: "a6298267-7240-472e-94d0-09fad3d32c7b"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Texts/Footer
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2e062827-6427-45f3-b9d6-272065e0f725"

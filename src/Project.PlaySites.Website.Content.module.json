@@ -1,0 +1,19 @@
+{
+	"namespace": "Project.PlaySites.Website",
+	"references": ["Foundation.*", "Feature.*", "Project.PlaySites.Website.Shared"],
+	"items": {
+		"includes": [
+			{
+				"name": "Project.PlaySites.Website.Content",
+				"path": "/sitecore/content/PlaySites",
+				"database": "master",
+				"scope": "SingleItem"
+			},
+			{
+				"name": "Project.PlaySites.Website.Content.PlaySxa",
+				"path": "/sitecore/content/PlaySites/PlaySxa",
+				"database": "master"
+			}
+		]
+	}
+}

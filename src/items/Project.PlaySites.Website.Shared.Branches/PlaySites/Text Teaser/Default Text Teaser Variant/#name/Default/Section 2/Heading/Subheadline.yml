@@ -1,0 +1,23 @@
+﻿---
+ID: "37fb2aff-037e-4374-b704-c08658a34959"
+Parent: "8e13d4ac-1698-4f49-8a52-cd859ad98dc4"
+Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
+Path: /sitecore/templates/Branches/Feature/PlaySites/Text Teaser/Default Text Teaser Variant/$name/Default/Section 2/Heading/Subheadline
+SharedFields:
+- ID: "4753764c-c05a-4623-841b-97f85135241c"
+  Hint: FieldName
+  Value: Subheadline
+- ID: "db805bdc-8eec-4238-b174-2427b6f1f077"
+  Hint: Tag
+  Value: "{AD7A95FD-05D0-484E-8AFB-FB1DDD5F44AB}"
+- ID: "fe56eae5-d6a1-4703-92f7-4862da6deac8"
+  Hint: RenderIfEmpty
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5998d49b-c37b-4549-8581-2862d138d88a"

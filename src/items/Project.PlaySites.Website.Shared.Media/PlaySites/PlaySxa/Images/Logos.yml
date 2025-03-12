@@ -1,0 +1,13 @@
+﻿---
+ID: "102b11b3-c17f-44c9-bb8b-07f94c34506c"
+Parent: "0613ab0a-ace1-4983-855d-9e46b9f983fc"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Project/PlaySites/PlaySxa/Images/Logos
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "59bb46eb-bbd4-4fef-9cfa-367dfdb22369"

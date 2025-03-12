@@ -1,0 +1,13 @@
+﻿---
+ID: "5950a779-44e8-4e8d-bb8a-f08607e33c8a"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "8d84f263-a22a-4967-9cce-cc12407e05fc"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Flips
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fa12a321-5b30-4210-a0a3-aa66dab21910"

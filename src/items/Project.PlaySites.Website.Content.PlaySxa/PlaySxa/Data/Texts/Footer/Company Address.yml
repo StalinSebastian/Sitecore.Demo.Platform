@@ -1,0 +1,19 @@
+﻿---
+ID: "88893f01-8389-4443-a473-20ebe59b1285"
+Parent: "2dd29312-9b26-4387-8068-f583ae6b952a"
+Template: "b8f5894c-b493-4016-bf78-4090b0a2fd16"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Texts/Footer/Company Address
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d894a07a-14f2-41ab-9931-ac0dadc3c436"
+    - ID: "b3635965-6786-457c-9dee-28de73c0a331"
+      Hint: Text
+      Value: <p>Company</p><p>address</p><p>phone</p>

@@ -1,0 +1,29 @@
+﻿---
+ID: "a2a33483-588a-4959-95b2-c7eb7c429562"
+Parent: "cfd3c21b-d78e-487b-8fe3-8e314445c179"
+Template: "9f8c30df-9f3c-4d48-a9f7-e3b493d3307f"
+Path: /sitecore/content/PlaySites/PlaySxa/Home/Services/Grapthics Design
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "4735f8a7-07a3-4ade-a935-a07b415afac6"
+      Hint: Teaser Headline
+      Value: Grapthics Design
+    - ID: "556b7f8d-88af-484b-ac0b-6daf0024a8de"
+      Hint: Teaser Image
+      Value: |
+        <image mediaid="{86D9BE75-7F2B-4094-9C65-E14F5BD37061}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a19c35bf-c9bf-490a-9c23-5f0e3c5ba01e"
+    - ID: "a519d4c5-65f1-4652-8531-bd0f5e75071d"
+      Hint: Teaser Description
+      Value: Grapthics Design Lorem Ipsem
+    - ID: "faa81e4b-e0b7-4f5a-b376-7ebe017f5ad8"
+      Hint: Title
+      Value: Grapthics Design

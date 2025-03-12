@@ -1,0 +1,24 @@
+﻿---
+ID: "1b3dd447-1f4c-433a-b55c-8b772634467d"
+Parent: "42a16d42-828e-47ce-8d62-a5845df0abc3"
+Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/RichText/Default/Text
+BranchID: "e4acb01a-2a91-4200-b9ce-205b2a5aa488"
+SharedFields:
+- ID: "4753764c-c05a-4623-841b-97f85135241c"
+  Hint: FieldName
+  Value: Text
+- ID: "db805bdc-8eec-4238-b174-2427b6f1f077"
+  Hint: Tag
+  Value: 
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{BA3EE58F-0361-4D6D-B35C-0AEE73A39FC7}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2af45df1-9010-466c-aa1c-cf8db574ea90"

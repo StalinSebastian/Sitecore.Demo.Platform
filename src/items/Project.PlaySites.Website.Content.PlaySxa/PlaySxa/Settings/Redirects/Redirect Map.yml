@@ -1,0 +1,20 @@
+﻿---
+ID: "5eab50ff-8696-4912-aff5-13fb3d23fb6e"
+Parent: "5fdd7d54-a44c-405a-8df9-7b312c3e1b32"
+Template: "f4fb6125-f113-4373-8aa2-4648c2c1960e"
+Path: /sitecore/content/PlaySites/PlaySxa/Settings/Redirects/Redirect Map
+SharedFields:
+- ID: "5ecfffc9-d530-4512-b757-9e9830f07d5a"
+  Hint: UrlMapping
+  Value: %2fabout=%2Faboutus&about=AboutUS
+- ID: "980dfa07-41d4-4c4e-ab28-de657afdb6bc"
+  Hint: RedirectType
+  Value: Redirect301
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "976b84dc-ccc0-4bda-b4e1-0705442818fa"

@@ -1,0 +1,30 @@
+﻿---
+ID: "501c0ebd-1058-4220-a32c-9817c28a6358"
+Parent: "2abd8f08-ecf3-4cdc-9439-7fdd9f0f241c"
+Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
+Path: /sitecore/templates/Branches/Feature/PlaySites/Services/Default Services Variant/$name/Default/Service Card/Services/wrapper/card/Teaser Description
+BranchID: "931354e3-197f-4a15-9516-7df4ed0b8719"
+SharedFields:
+- ID: "4753764c-c05a-4623-841b-97f85135241c"
+  Hint: FieldName
+  Value: Teaser Description
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 150
+- ID: "db805bdc-8eec-4238-b174-2427b6f1f077"
+  Hint: Tag
+  Value: "{6C08DBD3-67FF-454C-B526-1EE5F77D5093}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2A2101A8-63CC-43C9-9311-20FBB722C10C}"
+- ID: "fe56eae5-d6a1-4703-92f7-4862da6deac8"
+  Hint: RenderIfEmpty
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c4f9e558-6bb9-454a-8b51-229a0b55aed8"

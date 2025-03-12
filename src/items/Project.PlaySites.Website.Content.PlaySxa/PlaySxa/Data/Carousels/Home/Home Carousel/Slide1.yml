@@ -1,0 +1,40 @@
+﻿---
+ID: "ca98938c-216a-4787-9935-c118175ba2f5"
+Parent: "b70e8848-c4ef-410a-90df-a6781c6c117d"
+Template: "142e5fc1-ec62-4540-bad9-cd88f337cd2e"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Carousels/Home/Home Carousel/Slide1
+BranchID: "3fa4800d-eca0-44ed-9b49-7d6da032c747"
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{B8AB7438-FF88-41A2-B0FD-493FB644E1B2}">
+        <r
+          ds=""
+          id="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}"
+          par="FieldNames=%7B7C5FEDFB-F002-4136-99B0-5ED23040938B%7D&amp;Styles&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D"
+          ph="section-content"
+          uid="{BF78FEE7-D25A-406E-9FC5-CB5F6DF139B1}" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{35B145AB-48A1-4621-91CD-EFBAD228D5D1}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "427ec0bd-3bf2-45b9-880f-bdb0054e7925"
+      Hint: SlideImage
+      Value: |
+        <image mediaid="{43B1BA6D-CF1C-4C65-A035-F40D97A3994C}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a71c06a4-7a82-4bca-8888-b08df82c0c55"

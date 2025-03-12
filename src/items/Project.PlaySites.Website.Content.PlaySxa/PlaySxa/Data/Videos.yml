@@ -1,0 +1,13 @@
+﻿---
+ID: "37a0c449-301f-4c72-8d54-a6189516e54a"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "4c650ab1-7dab-447c-9836-bb984df71842"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Videos
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d198ab11-c695-419f-9d35-1fbacbe01498"

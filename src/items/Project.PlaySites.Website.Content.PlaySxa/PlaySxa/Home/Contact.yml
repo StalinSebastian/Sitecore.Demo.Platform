@@ -1,0 +1,23 @@
+﻿---
+ID: "ceaa6c0f-3849-4c53-840e-a066b50783fa"
+Parent: "167ddaa3-c212-4229-be16-c4e1421e315d"
+Template: "8773ac09-23db-42d1-8e18-9841e80fbd23"
+Path: /sitecore/content/PlaySites/PlaySxa/Home/Contact
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Contact
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f0eabc2d-241c-42c8-915e-150ce9dc0fd8"
+    - ID: "faa81e4b-e0b7-4f5a-b376-7ebe017f5ad8"
+      Hint: Title
+      Value: Contact

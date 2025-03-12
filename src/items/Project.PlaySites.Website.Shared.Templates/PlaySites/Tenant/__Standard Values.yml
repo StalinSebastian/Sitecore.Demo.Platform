@@ -1,0 +1,13 @@
+﻿---
+ID: "457ba9cb-9bdc-4ba4-889f-1c35679c2d0a"
+Parent: "fd6a2338-cd98-4a4a-bcc0-ea4491b4751a"
+Template: "fd6a2338-cd98-4a4a-bcc0-ea4491b4751a"
+Path: /sitecore/templates/Project/PlaySites/Tenant/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "55c59292-040a-44e4-810d-c16b2d15fb45"

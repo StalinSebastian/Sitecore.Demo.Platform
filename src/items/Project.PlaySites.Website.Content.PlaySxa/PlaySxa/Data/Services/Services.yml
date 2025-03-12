@@ -1,0 +1,29 @@
+﻿---
+ID: "c810a55a-5ff7-49b4-9128-a5ff53badb84"
+Parent: "15904300-bb01-4c47-be82-952a7f46567a"
+Template: "c95c9654-54a6-4289-907d-8851146852b4"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Services/Services
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "3260d5e1-d1a0-4647-9dfd-0e279f2d0858"
+      Hint: ServicesDescription
+      Value: Lorem ipsum dolor sit amet, consectetur adipisci elit
+    - ID: "576c55b0-981d-4b1b-b9e4-570c483f3fb3"
+      Hint: Services
+      Value: |
+        {A2A33483-588A-4959-95B2-C7EB7C429562}
+        {75CDF0F4-6ED6-416F-B652-9CB05AC7445D}
+        {4015C52F-B011-4F8E-BAB2-7DF1B280F4C0}
+        {CFC6216A-541C-4E7A-83DF-FF1E1623DABB}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "21895a89-612f-40c5-94ce-c23804c7fddf"
+    - ID: "b2bb141c-d5a1-414d-8765-0641af349816"
+      Hint: ServicesHeadline
+      Value: Services

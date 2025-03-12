@@ -1,0 +1,29 @@
+﻿---
+ID: "1c52f09c-b33e-4da7-bf82-2cac046fc157"
+Parent: "90511764-195f-4a4c-9b6c-3a3996fbc60a"
+Template: "664e699f-a7dd-448b-b7ef-6f2e7a47ea5b"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Text Teaser/Home/Text Teaser
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0a7e9425-fa38-40a9-b496-b22505997bf4"
+      Hint: Content
+      Value: |
+        <strong style="color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; font-style: normal; text-align: justify; background-color: rgb(255, 255, 255);">Lorem Ipsum</strong><span style="color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; text-align: justify; background-color: rgb(255, 255, 255);">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+    - ID: "0e572830-208b-437b-8275-6dec36b84d7d"
+      Hint: Subheadline
+      Value: Some text about who we are and what we do.
+    - ID: "2b16e677-c0a0-4379-be48-ce718c52e04e"
+      Hint: Label
+      Value: ABOUT US
+    - ID: "46573b30-4bd6-4f94-afab-f94706e9b8e0"
+      Hint: Headline
+      Value: LOREM IPSUM
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "81e5873a-1b22-41eb-b3b3-ebf5f5da566d"

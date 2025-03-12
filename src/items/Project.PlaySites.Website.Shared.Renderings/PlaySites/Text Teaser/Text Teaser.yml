@@ -1,0 +1,35 @@
+﻿---
+ID: "c614bf92-2e93-4482-9351-aaad70f23e42"
+Parent: "5b5eeac0-ba89-4876-9193-24b83ac2d90f"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/PlaySites/Text Teaser/Text Teaser
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/blackboard.png
+- ID: "13f89250-ad6b-4548-882e-118a12c18094"
+  Hint: Parameters Template
+  Value: "{2616F720-7893-4452-A220-7113625821ED}"
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Feature/PlaySites/Text Teaser/Data Source/Text Teaser
+- ID: "34e81e40-1d4d-45b0-bcf1-a0ffe5521685"
+  Hint: RenderingCssClass
+  Value: "text-teaser"
+- ID: "49b9d6c5-9551-4ba4-840e-74d5582256c0"
+  Hint: RenderingViewPath
+  Value: ~/Views/Text Teaser/Text Teaser.cshtml
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Text Teaser Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Text Teaser Folder']"
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Sitecore.XA.Foundation.RenderingVariants.Controllers.VariantsController,Sitecore.XA.Foundation.RenderingVariants
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6629cc6f-571c-4717-9319-6d835f1d0a23"

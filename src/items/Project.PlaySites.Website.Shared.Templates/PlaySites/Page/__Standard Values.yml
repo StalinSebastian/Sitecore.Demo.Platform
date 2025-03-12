@@ -1,0 +1,22 @@
+﻿---
+ID: "1dfc9b03-364e-4f7d-be46-8aa5476b38d5"
+Parent: "8773ac09-23db-42d1-8e18-9841e80fbd23"
+Template: "8773ac09-23db-42d1-8e18-9841e80fbd23"
+Path: /sitecore/templates/Project/PlaySites/Page/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {8773AC09-23DB-42D1-8E18-9841E80FBD23}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2ab12f36-bdc3-4c83-bb2c-bc38ef4f5e5b"
+    - ID: "faa81e4b-e0b7-4f5a-b376-7ebe017f5ad8"
+      Hint: Title
+      Value: $name

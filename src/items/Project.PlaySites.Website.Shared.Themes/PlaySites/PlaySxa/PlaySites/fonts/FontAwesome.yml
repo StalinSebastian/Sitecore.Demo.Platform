@@ -1,0 +1,27 @@
+﻿---
+ID: "e3879dc9-6f7b-4c30-86dd-a4286bd9cbae"
+Parent: "8978d9f4-4e70-449e-ad2a-5a6e8c189cab"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Themes/PlaySites/PlaySxa/PlaySites/fonts/FontAwesome
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "12d72c0c-f415-482a-aa94-9d586ef482eb"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dfcd9c05-45b1-46d4-b92c-b4ea3685f6da"
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dfcd9c05-45b1-46d4-b92c-b4ea3685f6da"

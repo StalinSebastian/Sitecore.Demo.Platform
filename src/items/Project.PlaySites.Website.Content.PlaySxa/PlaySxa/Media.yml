@@ -1,0 +1,23 @@
+﻿---
+ID: "e8ff7f41-2df5-4bbf-8ec8-3bd794dd3685"
+Parent: "5a06ab94-821d-41d3-a7ab-41cfe4a6f6ab"
+Template: "e8e8c94f-4248-43c3-a79f-99fbb49d78e6"
+Path: /sitecore/content/PlaySites/PlaySxa/Media
+BranchID: "b90549b5-c997-4d6b-b102-c9ab82528974"
+SharedFields:
+- ID: "de8257d9-43aa-4eff-a2f4-2e9fbbd20e79"
+  Hint: AdditionalChildren
+  Value: |
+    {C763399A-0219-4A52-89F0-71B6DD977938}
+    {EB90E89B-B41B-4208-8FAB-663957D1BDB7}
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{E2FF4516-4407-4173-8ADD-704761C15B74}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4360bca5-7b1e-4bd4-a22f-38c26b101140"

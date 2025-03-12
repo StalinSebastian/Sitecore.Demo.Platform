@@ -1,0 +1,30 @@
+﻿---
+ID: "dde846fd-0cca-4e99-a7fe-6bf0b33d341c"
+Parent: "2abd8f08-ecf3-4cdc-9439-7fdd9f0f241c"
+Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
+Path: /sitecore/templates/Branches/Feature/PlaySites/Services/Default Services Variant/$name/Default/Service Card/Services/wrapper/card/Teaser Image
+BranchID: "931354e3-197f-4a15-9516-7df4ed0b8719"
+SharedFields:
+- ID: "4753764c-c05a-4623-841b-97f85135241c"
+  Hint: FieldName
+  Value: Teaser Image
+- ID: "7495124d-09b5-4cb3-b4a6-fe77a95827da"
+  Hint: CssClass
+  Value: "img-fluid mb-3"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{3995BCEB-05F6-4368-9803-B4FF48759A3B}"
+- ID: "fe56eae5-d6a1-4703-92f7-4862da6deac8"
+  Hint: RenderIfEmpty
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "94e1a86a-f40d-40f8-b767-69fc74098b86"

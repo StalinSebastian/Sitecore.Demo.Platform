@@ -1,0 +1,13 @@
+﻿---
+ID: "66b475ac-0488-4dbe-a7f2-cf989c41bc68"
+Parent: "39a4e7bf-b905-4a48-8dbe-e173fbe99564"
+Template: "39a4e7bf-b905-4a48-8dbe-e173fbe99564"
+Path: /sitecore/templates/Project/PlaySites/Page Design/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d9234588-f541-4669-8984-597e26ebf2e0"

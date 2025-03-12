@@ -1,0 +1,13 @@
+﻿---
+ID: "c763399a-0219-4a52-89f0-71b6dd977938"
+Parent: "a090d7b0-0ef9-472a-94cf-55db0537afe7"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Project/PlaySites/PlaySxa
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "608ea623-d18f-45ed-915c-a5f970955fab"

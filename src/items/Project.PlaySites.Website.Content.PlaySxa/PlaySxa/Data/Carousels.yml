@@ -1,0 +1,13 @@
+﻿---
+ID: "0c236178-9f9b-40f9-8e49-963d14411302"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "a13a1b91-fd2b-494b-9086-008852175b0a"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Carousels
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7ee07bee-16da-4ce9-b5ec-2575f68a82ee"

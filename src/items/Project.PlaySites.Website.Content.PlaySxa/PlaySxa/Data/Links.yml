@@ -1,0 +1,13 @@
+﻿---
+ID: "e61d301c-563c-4d86-9ed6-4172ae33f433"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "ad8537df-06bb-4dd3-b044-0cd5c181a219"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Links
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "99cdefe5-a790-426a-b34d-03b991ecaa72"

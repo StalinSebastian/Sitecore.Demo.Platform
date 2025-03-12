@@ -1,0 +1,27 @@
+﻿---
+ID: "44e452ed-9f27-4e35-815a-34c000ecfcd2"
+Parent: "8978d9f4-4e70-449e-ad2a-5a6e8c189cab"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Themes/PlaySites/PlaySxa/PlaySites/fonts/OpenSans
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8f7e6e33-6566-4961-b270-9fd26e9b4f0e"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1173a2aa-78be-4b19-9839-0f72aa8c88fb"
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1173a2aa-78be-4b19-9839-0f72aa8c88fb"

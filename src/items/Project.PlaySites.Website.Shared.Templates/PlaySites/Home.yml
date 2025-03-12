@@ -1,0 +1,28 @@
+﻿---
+ID: "99094a86-ead9-4f28-a5a4-4f4b1efb81ee"
+Parent: "6183b9ca-4872-41ef-8eac-d1b8a73463cd"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/PlaySites/Home
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/home.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {8773AC09-23DB-42D1-8E18-9841E80FBD23}
+    {E9272B0E-3BBA-445F-8634-224D68966BB9}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{8AB1C2FD-2E2A-4034-B218-2B39DFF52E04}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dd95fd31-5f63-4c33-b90e-ca32fb06faec"

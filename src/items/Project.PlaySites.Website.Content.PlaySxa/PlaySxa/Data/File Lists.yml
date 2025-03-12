@@ -1,0 +1,13 @@
+﻿---
+ID: "10749192-47d6-4e13-9e68-e22dc1cee8b6"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "c959e8ef-cd42-4967-83f6-bee092c0beae"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/File Lists
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "efa5a8ea-405f-41b2-a9da-20ccc7d5b1cd"

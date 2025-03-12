@@ -1,0 +1,20 @@
+﻿---
+ID: "57dcc770-050f-402d-ab9b-299a90872361"
+Parent: "2ac2be32-b760-425e-8be8-5d80bd6cd12d"
+Template: "aca5c9a3-cda0-49b6-893f-1d4a7cb595b0"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/Services/Default/Service Card
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "bea2740e-90d1-4b16-bd1d-7a7cc8605d2d"
+  Hint: CssClass
+  Value: "row gy-4"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1bbcd4cc-3c56-45af-ab42-e9a47995e8d7"

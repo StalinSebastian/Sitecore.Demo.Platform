@@ -1,0 +1,13 @@
+﻿---
+ID: "17e8bfc4-a8bd-42f0-b12c-4f198fd5bc9c"
+Parent: "84543e36-6847-4b4d-ac5c-e4c416546e96"
+Template: "93227c5d-4fef-474d-94c0-f252ec8e8219"
+Path: /sitecore/layout/Layouts/Feature/PlaySites/Text Teaser
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "16ac7b8b-b7a6-4d03-9d58-e4f80fe0ee5b"

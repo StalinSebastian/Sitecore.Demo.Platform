@@ -1,0 +1,18 @@
+﻿---
+ID: "82c7ad56-57ec-4fdd-b9b3-47c575837794"
+Parent: "9c51632d-2dbb-4a94-9dd4-ccebe7798653"
+Template: "26fce9bf-0256-458d-8281-a713a5bf5520"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Cache Settings
+BranchID: "78bf62a1-444f-45c3-b2c9-9ee7e5f38057"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{4023FF76-79F3-4BF9-832F-7DCE51D741F6}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8d5efa7b-7783-485e-908d-81aaa678789d"

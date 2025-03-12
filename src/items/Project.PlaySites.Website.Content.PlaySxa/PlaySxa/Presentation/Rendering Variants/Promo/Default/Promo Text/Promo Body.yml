@@ -1,0 +1,21 @@
+﻿---
+ID: "7a6ac5a4-b805-4d00-83b1-eca24aea86af"
+Parent: "55f5c229-5865-4258-872d-42e7636e18ae"
+Template: "aca5c9a3-cda0-49b6-893f-1d4a7cb595b0"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/Promo/Default/Promo Text/Promo Body
+BranchID: "a19fc87d-262d-42cf-b595-41b4262733f4"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{CD8C1F58-A666-461A-8C91-34C121A235BA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2767c05e-5b5b-46df-8cdc-c87cf561ecb5"

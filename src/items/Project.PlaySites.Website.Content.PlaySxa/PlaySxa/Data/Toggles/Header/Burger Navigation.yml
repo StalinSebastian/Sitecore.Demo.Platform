@@ -1,0 +1,13 @@
+﻿---
+ID: "790c6262-42a0-4116-ace6-5ce9369645fb"
+Parent: "fd056df7-5600-4375-a17e-1522497c46ba"
+Template: "a2cb73c7-0054-4461-aab8-0969fdd2e094"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Toggles/Header/Burger Navigation
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "288d6e22-908a-41b5-bb28-25b02d7b60f7"

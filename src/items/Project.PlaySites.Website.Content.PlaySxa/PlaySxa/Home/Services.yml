@@ -1,0 +1,34 @@
+﻿---
+ID: "cfd3c21b-d78e-487b-8fe3-8e314445c179"
+Parent: "167ddaa3-c212-4229-be16-c4e1421e315d"
+Template: "12093315-7ace-4851-bdf1-bedd2191e72b"
+Path: /sitecore/content/PlaySites/PlaySxa/Home/Services
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{5552A2FE-1D0E-4C3B-8ABA-5666F450FA02}"
+              s:ds="{C810A55A-5FF7-49B4-9128-A5FF53BADB84}"
+              s:id="{728FF398-881C-4278-9622-B7C60FF41C43}"
+              s:par="Reset Caching Options&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B2AC2BE32-B760-425E-8BE8-5D80BD6CD12D%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:ph="main" />
+          </d>
+        </r>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7ddac025-bb1c-4383-82dc-6afbf3fb6f33"
+    - ID: "faa81e4b-e0b7-4f5a-b376-7ebe017f5ad8"
+      Hint: Title
+      Value: Services

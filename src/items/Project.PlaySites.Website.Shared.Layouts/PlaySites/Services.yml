@@ -1,0 +1,13 @@
+﻿---
+ID: "b76222e1-d49e-4d7e-8edb-79950c052a37"
+Parent: "84543e36-6847-4b4d-ac5c-e4c416546e96"
+Template: "93227c5d-4fef-474d-94c0-f252ec8e8219"
+Path: /sitecore/layout/Layouts/Feature/PlaySites/Services
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e2824c32-ecbb-4e7f-9702-a1b7a498ded2"

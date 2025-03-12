@@ -1,0 +1,13 @@
+﻿---
+ID: "fffc5359-e28c-4714-a102-284370edf619"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "1ef29b63-5b98-463c-b3c8-66dfe99bd641"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Tabs
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5be02527-7115-4d95-a589-7b026d78597c"

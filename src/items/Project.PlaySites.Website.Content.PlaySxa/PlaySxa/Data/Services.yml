@@ -1,0 +1,13 @@
+﻿---
+ID: "15904300-bb01-4c47-be82-952a7f46567a"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "a3e89e52-226e-4eae-a2ea-2a99d28ec56d"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Services
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d82752ce-657f-41e0-9e2a-db703c1f21e7"

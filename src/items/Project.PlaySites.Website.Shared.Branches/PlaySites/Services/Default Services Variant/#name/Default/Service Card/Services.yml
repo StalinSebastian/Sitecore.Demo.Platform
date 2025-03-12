@@ -1,0 +1,27 @@
+﻿---
+ID: "352c745a-3a5d-40af-83cb-6362455e81fb"
+Parent: "f7e3122d-781e-42f3-8632-7d74bf376aac"
+Template: "6354d18e-54e9-45ad-9ec7-510769db4809"
+Path: /sitecore/templates/Branches/Feature/PlaySites/Services/Default Services Variant/$name/Default/Service Card/Services
+BranchID: "931354e3-197f-4a15-9516-7df4ed0b8719"
+SharedFields:
+- ID: "3028c974-c209-4e52-881c-8b8456fac1aa"
+  Hint: MaxNumberOfResults
+  Value: 6
+- ID: "6a018521-3d58-4cdd-98fc-88be689650d5"
+  Hint: PassThroughField
+  Value: Services
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{87F4DBCC-EC9B-4491-B97A-A01C5FA5147C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ddb2ddda-fb49-4c4e-9b10-1e3353d96d54"

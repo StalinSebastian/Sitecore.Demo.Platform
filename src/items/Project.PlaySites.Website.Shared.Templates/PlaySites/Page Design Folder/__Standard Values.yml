@@ -1,0 +1,19 @@
+﻿---
+ID: "65b35e7e-3b1f-482b-9e47-16aa1e6415ac"
+Parent: "54669105-c572-42da-ae4b-e08a95bfa64a"
+Template: "54669105-c572-42da-ae4b-e08a95bfa64a"
+Path: /sitecore/templates/Project/PlaySites/Page Design Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {54669105-C572-42DA-AE4B-E08A95BFA64A}
+    {39A4E7BF-B905-4A48-8DBE-E173FBE99564}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cb6a6f47-43e2-4753-9f5b-086bf6d713f1"

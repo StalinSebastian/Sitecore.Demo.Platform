@@ -1,0 +1,13 @@
+﻿---
+ID: "a090d7b0-0ef9-472a-94cf-55db0537afe7"
+Parent: "90ae357f-6171-4ea9-808c-5600b678f726"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Project/PlaySites
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "12452366-ecd3-4d16-9733-734ddc8e9af1"

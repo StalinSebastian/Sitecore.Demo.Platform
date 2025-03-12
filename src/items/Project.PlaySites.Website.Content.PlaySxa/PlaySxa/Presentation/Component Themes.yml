@@ -1,0 +1,18 @@
+﻿---
+ID: "37a03a66-fd8d-4aae-9b9a-ff3062c8a38e"
+Parent: "9c51632d-2dbb-4a94-9dd4-ccebe7798653"
+Template: "6d39afeb-15c9-4cdb-bd92-844265f8b77e"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Component Themes
+BranchID: "909ede6f-fd04-402b-9605-e8445d82342f"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{5435DE11-98F5-49EA-9DA9-8C52E8897043}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c60a341d-e493-48ad-83d7-00763c152364"

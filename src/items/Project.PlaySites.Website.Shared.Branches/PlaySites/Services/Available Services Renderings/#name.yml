@@ -1,0 +1,31 @@
+﻿---
+ID: "ca7a9600-352a-4965-a749-04592dbeafd0"
+Parent: "feaeebb8-6bae-43df-83e1-8281d751d2f2"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/templates/Branches/Feature/PlaySites/Services/Available Services Renderings/$name
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: "{728FF398-881C-4278-9622-B7C60FF41C43}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8731a708-03a3-4f16-855c-029824bea27a"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3b007019-4504-4edf-9c75-3eb1a70b63b3"
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3b007019-4504-4edf-9c75-3eb1a70b63b3"

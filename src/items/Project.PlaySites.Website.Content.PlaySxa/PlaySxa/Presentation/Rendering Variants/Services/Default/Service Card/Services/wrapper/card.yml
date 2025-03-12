@@ -1,0 +1,24 @@
+﻿---
+ID: "d1bff991-7102-4339-9110-ed5e95226636"
+Parent: "9bc69f0e-687a-4b1c-9d74-fecbec335d89"
+Template: "aca5c9a3-cda0-49b6-893f-1d4a7cb595b0"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/Services/Default/Service Card/Services/wrapper/card
+BranchID: "931354e3-197f-4a15-9516-7df4ed0b8719"
+SharedFields:
+- ID: "4a997ffd-136b-409e-8dc9-fde53ac545a3"
+  Hint: IsLink
+  Value: 1
+- ID: "bea2740e-90d1-4b16-bd1d-7a7cc8605d2d"
+  Hint: CssClass
+  Value: "service-card text-center p-4"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{39F1D53A-5E17-4F4C-9838-0A8DD3D8D5CB}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a178bb24-8e19-48db-932b-296567ca857d"

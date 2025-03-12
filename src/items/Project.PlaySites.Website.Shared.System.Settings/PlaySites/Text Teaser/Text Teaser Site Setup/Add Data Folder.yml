@@ -1,0 +1,23 @@
+﻿---
+ID: "30ef4b1b-6ab7-4da4-a778-d00a0b79913f"
+Parent: "28b44f14-9157-4a5a-9977-f7a3b3996a3e"
+Template: "ea8a3f26-9ccd-443a-95f5-71b868a94bd0"
+Path: /sitecore/system/Settings/Feature/PlaySites/Text Teaser/Text Teaser Site Setup/Add Data Folder
+SharedFields:
+- ID: "4795a7c6-08a9-4248-86c3-d460062c3a22"
+  Hint: Location
+  Value: "{15497C63-5946-49F4-B0A2-FE50A600CFAC}"
+- ID: "7868e6bc-525c-4fce-ab8a-77da3e09b171"
+  Hint: Name
+  Value: Text Teaser
+- ID: "e62c28f0-9d3b-46e2-8bec-a5e120542499"
+  Hint: Template
+  Value: "{FC59BB60-6974-4A0A-BE0E-45042CADA735}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f2b30175-cd11-4a57-9412-14c7e6e9270a"

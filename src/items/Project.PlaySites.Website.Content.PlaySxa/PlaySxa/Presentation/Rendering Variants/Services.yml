@@ -1,0 +1,21 @@
+﻿---
+ID: "017dd428-cf68-4f83-91cd-7473e2be87da"
+Parent: "da8d33e1-4ead-417c-b0ee-5583f2d12469"
+Template: "e1a3b30c-77bc-4f6c-a008-d01b3371235d"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/Services
+BranchID: "931354e3-197f-4a15-9516-7df4ed0b8719"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/window_dialog.png
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{9BCF014C-B5D2-4493-8826-DA06CD02EBFB}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "85435c4d-a938-44f9-a34a-1d19349bbb39"

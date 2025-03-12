@@ -1,0 +1,17 @@
+﻿---
+ID: "bcaf16db-b9d4-4a42-98ef-77f80eaa1850"
+Parent: "da8d33e1-4ead-417c-b0ee-5583f2d12469"
+Template: "e1a3b30c-77bc-4f6c-a008-d01b3371235d"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/Field Editor
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/text_field.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "105d638a-92c8-471e-be23-6f49ea1c493e"

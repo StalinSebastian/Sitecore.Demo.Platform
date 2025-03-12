@@ -1,0 +1,13 @@
+﻿---
+ID: "31a6e3ef-1b6a-4257-9af1-1912419386d7"
+Parent: "b6f5300f-2334-49af-9d0d-dc8868666ee2"
+Template: "8178b44e-b2bb-4635-85ba-b807ce420858"
+Path: /sitecore/content/PlaySites/PlaySxa/Data/Toggles
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d01361b8-f981-4877-80c2-81b7c0af028c"

@@ -1,0 +1,17 @@
+﻿---
+ID: "32f56394-f2ef-47ea-bebb-02177e46af70"
+Parent: "9e8809e6-0739-4a61-9645-04d39d6a31fa"
+Template: "aca5c9a3-cda0-49b6-893f-1d4a7cb595b0"
+Path: /sitecore/templates/Branches/Feature/PlaySites/Text Teaser/Default Text Teaser Variant/$name/Default/Section 2/Content
+SharedFields:
+- ID: "bea2740e-90d1-4b16-bd1d-7a7cc8605d2d"
+  Hint: CssClass
+  Value: "col-6"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4f29f643-fea4-4e20-b2fd-7c22fcf33e24"

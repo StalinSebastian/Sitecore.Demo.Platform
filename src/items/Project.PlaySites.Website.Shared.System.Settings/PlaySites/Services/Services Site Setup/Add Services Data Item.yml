@@ -1,0 +1,23 @@
+﻿---
+ID: "6a63e5db-51e9-4fc1-a547-a5ca50c64f9a"
+Parent: "0cce2a3c-7564-4b47-aad3-172a21f75bf3"
+Template: "ea8a3f26-9ccd-443a-95f5-71b868a94bd0"
+Path: /sitecore/system/Settings/Feature/PlaySites/Services/Services Site Setup/Add Services Data Item
+SharedFields:
+- ID: "4795a7c6-08a9-4248-86c3-d460062c3a22"
+  Hint: Location
+  Value: "{15497C63-5946-49F4-B0A2-FE50A600CFAC}"
+- ID: "7868e6bc-525c-4fce-ab8a-77da3e09b171"
+  Hint: Name
+  Value: Services
+- ID: "e62c28f0-9d3b-46e2-8bec-a5e120542499"
+  Hint: Template
+  Value: "{A3E89E52-226E-4EAE-A2EA-2A99D28EC56D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e07eb152-54c0-458e-bd43-fdaefb3651db"

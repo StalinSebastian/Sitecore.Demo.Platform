@@ -1,0 +1,24 @@
+﻿---
+ID: "552b9e32-8cd5-4457-aad4-251995780536"
+Parent: "3592e776-4d1a-4bae-9af8-ce4f51c77ba6"
+Template: "6354d18e-54e9-45ad-9ec7-510769db4809"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Rendering Variants/File List/Title and Image/File
+BranchID: "83becf6f-0518-4128-a395-8906981b7cb1"
+SharedFields:
+- ID: "6a018521-3d58-4cdd-98fc-88be689650d5"
+  Hint: PassThroughField
+  Value: File
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{24FEEBF5-EEB9-48D3-8585-0048EC1984CB}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c9996f2d-2809-4f3f-acb0-96e1308563dd"

@@ -1,0 +1,40 @@
+﻿---
+ID: "7f1fd2d0-7995-4b4a-980b-da1aa6b1cef4"
+Parent: "3bde349d-df31-437d-afce-299e4414902e"
+Template: "ea8a3f26-9ccd-443a-95f5-71b868a94bd0"
+Path: /sitecore/system/Settings/Feature/PlaySites/Services/Services Site Setup/Rendering Variants/Services
+SharedFields:
+- ID: "4795a7c6-08a9-4248-86c3-d460062c3a22"
+  Hint: Location
+  Value: "{5CDC5EB2-F14F-4495-88E8-AA882DDFAA05}"
+- ID: "7868e6bc-525c-4fce-ab8a-77da3e09b171"
+  Hint: Name
+  Value: Services
+- ID: "ad0e8de7-f6c1-49fa-b2c4-87e10fbdaa52"
+  Hint: Fields
+  Value: __Icon=Office%2F32x32%2Fwindow_dialog.png
+- ID: "e62c28f0-9d3b-46e2-8bec-a5e120542499"
+  Hint: Template
+  Value: "{931354E3-197F-4A15-9516-7DF4ED0B8719}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5242397b-805b-433f-aed9-aa7469721d82"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2759c8f5-9d4b-4899-b6e0-f1a651a835bd"
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2759c8f5-9d4b-4899-b6e0-f1a651a835bd"

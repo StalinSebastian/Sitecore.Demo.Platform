@@ -1,0 +1,48 @@
+{
+	"namespace": "Project.PlaySites.Website.Shared",
+	"references": ["Foundation.*", "Feature.*"],
+	"items": {
+		"includes": [
+			{
+				"name": "Project.PlaySites.Website.Shared.Templates",
+				"path": "/sitecore/templates/Project/PlaySites",
+				"database": "master"
+			},
+			{
+				"name": "Project.PlaySites.Website.Shared.Branches",
+				"path": "/sitecore/templates/Branches/Feature/PlaySites",
+				"database": "master"
+			},
+			{
+				"name": "Project.PlaySites.Website.Shared.Layouts",
+				"path": "/sitecore/layout/Layouts/Feature/PlaySites",
+				"database": "master"
+			},
+			{
+				"name": "Project.PlaySites.Website.Shared.Renderings",
+				"path": "/sitecore/layout/Renderings/Feature/PlaySites",
+				"database": "master"
+			},
+			{
+				"name": "Project.PlaySites.Website.Shared.System.Settings",
+				"path": "/sitecore/system/Settings/Feature/PlaySites",
+				"database": "master"
+			},
+			{
+				"name": "Project.PlaySites.Website.Shared.Media",
+				"path": "/sitecore/media library/Project/PlaySites",
+				"database": "master"
+			},
+			{
+				"name":"Project.PlaySites.Website.Shared.Themes",
+				"path": "/sitecore/media library/Themes/PlaySites",
+				"database": "master"
+			},
+			{
+				"name": "Project.PlaySites.Website.Shared.Forms",
+				"path": "/sitecore/Forms/PlaySites",
+				"database": "master"
+			}
+		]
+	}
+}

@@ -1,0 +1,24 @@
+﻿---
+ID: "825b92dd-91c9-413a-aa2c-4a5f18635bcd"
+Parent: "4c7ff74b-6fc5-44d9-9eee-e18390e01542"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: /sitecore/content/PlaySites/PlaySxa/Presentation/Styles/Background layout
+BranchID: "5edf676a-2fdd-418a-8c56-cb465ee16e20"
+SharedFields:
+- ID: "62ca1c9e-71a4-465f-835e-55bda7bb270b"
+  Hint: Type
+  Value: droplist
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 291
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{59EFE7E9-A991-461B-AF61-F8101CB70905}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a1fbc7c4-efb5-4599-8bba-08b6f7c9d388"
